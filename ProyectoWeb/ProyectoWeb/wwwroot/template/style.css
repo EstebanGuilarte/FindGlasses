@@ -1212,14 +1212,14 @@ Version:1.0
 	background: #fff;
 	overflow: hidden;
 }
-.hero-slider .single-slider {
-	height: auto;
-	background-image: url('https://via.placeholder.com/1900x700');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-    height: 510px;
-}
+	.hero-slider .single-slider {
+		height: auto;
+		background-image: url('https://www.tepapa.govt.nz/sites/default/files/styles/hero_image_1800x900/public/where-did-the-name-1800x700.jpg?itok=GJU3sbpd');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 510px;
+	}
 .hero-slider .text-inner {
 	
 }

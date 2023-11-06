@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.nav-link {
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el exceso de texto */
+    text-overflow: ellipsis; /* Agrega "..." al final del texto si es demasiado largo */
+}
