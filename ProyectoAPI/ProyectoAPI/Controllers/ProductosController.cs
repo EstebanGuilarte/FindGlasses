@@ -128,7 +128,7 @@ namespace ProyectoAPI.Controllers
 				return BadRequest(ex.Message);
 			}
 		}
-
+		 
 
 		[HttpGet] //PARA EL DROPDOWN
 		[Route("ConsultarTipoProducto")]
