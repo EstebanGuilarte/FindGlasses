@@ -73,6 +73,9 @@ namespace ProyectoAPI.Controllers
 
 
 
+
+
+
         //Revisar Este no estoy muy seguro que funcione debido , funciona desde el swagger dandole el id lo cual no es lo optimo
       
 
