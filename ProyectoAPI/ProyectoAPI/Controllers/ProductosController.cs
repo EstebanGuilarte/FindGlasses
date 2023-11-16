@@ -37,7 +37,7 @@ namespace ProyectoAPI.Controllers
                 using (var context = new SqlConnection(_connection))
                 {
                     var datos = context.Query<ProductosEnt>("ConsultarProductos",
-                        new {  },
+                        new { },
                         commandType: CommandType.StoredProcedure).ToList();
 
                     return Ok(datos);
@@ -71,90 +71,113 @@ namespace ProyectoAPI.Controllers
             }
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("ConsultarProductoPorId/{id}")]
+        public IActionResult ConsultarProductoPorId(long id)
+        {
+            try
+            {
+                using (var context = new SqlConnection(_connection))
+                {
+                    var datos = context.Query<ProductosEnt>("ConsultarProductoPorId",
+                        new { IdProducto = id },
+                        commandType: CommandType.StoredProcedure).SingleOrDefault();
 
+                    if (datos != null)
+                    {
+                        return Ok(datos);
+                    }
+                    else
+                    {
+                        return NotFound($"No se encontró el producto con ID: {id}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
+        [HttpPut]
+        [AllowAnonymous]
+        [Route("ActualizarProducto")]
+        public IActionResult ActualizarProducto(ProductosEnt entidad)
+        {
+            try
+            {
 
+                using (var context = new SqlConnection(_connection))
+                {
+                    var datos = context.Execute("ActualizarProducto",
+                        new { entidad.nombreProducto, entidad.descripcion, entidad.precio, entidad.cantidadStock, entidad.marca, entidad.tipoProducto, entidad.IdProducto },
+                        commandType: CommandType.StoredProcedure);
 
+                    return Ok(datos);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
-        //Revisar Este no estoy muy seguro que funcione debido , funciona desde el swagger dandole el id lo cual no es lo optimo
-      
+        //[Authorize(Roles = "Admin")] 
 
-		[HttpPut]
-		[AllowAnonymous]
-		[Route("ActualizarProducto")]
-		public IActionResult ActualizarProducto(ProductosEnt entidad)
-		{
-			try
-			{
+        //Revisar a detalle este método
+        [HttpDelete]
+        [AllowAnonymous]
+        [Route("EliminarProducto/{idProducto}")]
+        public IActionResult EliminarProducto(long idProducto)
+        {
+            try
+            {
+                // Verificar si el ID proporcionado es válido.
+                if (idProducto < 0)
+                {
+                    return BadRequest("ID de producto no válido.");
+                }
 
-				using (var context = new SqlConnection(_connection))
-				{
-					var datos = context.Execute("ActualizarProducto",
-						new { entidad.nombreProducto, entidad.descripcion, entidad.precio, entidad.cantidadStock, entidad.marca, entidad.tipoProducto, entidad.IdProducto },
-						commandType: CommandType.StoredProcedure);
+                using (var context = new SqlConnection(_connection))
+                {
+                    var datos = context.Execute("EliminarProducto",
+                        new { IdProducto = idProducto },
+                        commandType: CommandType.StoredProcedure);
 
-					return Ok(datos);
-				}
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
+                    return Ok(datos);
 
-		//[Authorize(Roles = "Admin")] 
-        
-		[HttpPost]
-		[Route("EliminarProducto")]   //ESTA FUNCIONAL EL PROCEDIMIENTO ALMACENADO DESDE EL SQL SERVER , EN SWAGGER NO ENCUENTRA EL IDPRODUCTO
-		public IActionResult EliminarProducto(ProductosEnt entidad)
-		{
-			try
-			{
-				using (var context = new SqlConnection(_connection))
-				{
-					var datos = context.Execute("EliminarProducto",
-						new {  entidad.IdProducto }, 
-						commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
-					if (datos > 0)
-					{
-						return Ok($"Se eliminó el producto con ID: {entidad.IdProducto}");
-					}
-					else
-					{
-						return NotFound($"No se encontró el producto con ID: {entidad.IdProducto}");
-					}
-				}
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
-		 
+        [HttpGet] //PARA EL DROPDOWN
+        [AllowAnonymous]
+        [Route("ConsultarTipoProducto")]
+        public IActionResult ConsultarTipoProducto()
+        {
+            try
+            {
+                using (var context = new SqlConnection(_connection))
+                {
+                    var datos = context.Query<SelectListItem>("ConsultarTipoProducto",
+                        new { },
+                        commandType: CommandType.StoredProcedure).ToList();
 
-		[HttpGet] //PARA EL DROPDOWN
-		[Route("ConsultarTipoProducto")]
-		public IActionResult ConsultarTipoProducto()
-		{
-			try
-			{
-				using (var context = new SqlConnection(_connection))
-				{
-					var datos = context.Query<SelectListItem>("ConsultarTipoProducto",
-						new { },
-						commandType: CommandType.StoredProcedure).ToList();
+                    return Ok(datos);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
-					return Ok(datos);
-				}
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
-
-	}
+    }
 }
 
 
