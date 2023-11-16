@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maris\\Desktop\\FINDGLASSES_REPO\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj": {}
+    "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maris\\Desktop\\FINDGLASSES_REPO\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj": {
+    "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maris\\Desktop\\FINDGLASSES_REPO\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj",
+        "projectUniqueName": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj",
         "projectName": "ProyectoWeb",
-        "projectPath": "C:\\Users\\maris\\Desktop\\FINDGLASSES_REPO\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj",
-        "packagesPath": "C:\\Users\\maris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maris\\Desktop\\FINDGLASSES_REPO\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\obj\\",
+        "projectPath": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj",
+        "packagesPath": "C:\\Users\\eagui\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eagui\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
