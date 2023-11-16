@@ -100,14 +100,10 @@
                                                     <i class="ti-settings text-primary"></i>
                                                     Perfil
                                                 </a>
-
-                                                @if (Context.Session.GetString("RolUsuario") == "1")
-                                                {
-                                                    <a class="dropdown-item" href="@Url.Action("ConsultarUsuarios", "Usuario")">
-                                                        <i class="ti-settings text-primary"></i>
-                                                        Usuarios
-                                                    </a>
-                                                }
+                                                <a class="dropdown-item" href="@Url.Action("ConsultarUsuarios", "Usuario")">
+                                                    <i class="ti-settings text-primary"></i>
+                                                    Usuarios
+                                                </a>
 
                                                 <a class="dropdown-item" href="@Url.Action("CambiarClave","Usuario")">
                                                     <i class="ti-settings text-primary"></i>
