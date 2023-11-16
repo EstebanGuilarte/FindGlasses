@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ProyectoWeb.Entities.ProductosEnt>
+
+@{
+    ViewData["Title"] = "ProductosLista";
+    Layout = "~/Views/Shared/_Layout_ProductosLista.cshtml";
+}
+
+<div class="content-wrapper d-flex align-items-center auth px-0">
+    <div class="row w-100 mx-0">
+        <div class="col-lg-4 mx-auto">
+
+            <div class="brand-logo">
+                <h1>Registrar Producto</h1>
+                <br />
+            </div>
+
+            <form asp-action="RegistrarProducto" method="post">
+                <div class="form-group">
+                    <label for="nombreProducto">Nombre del Producto:</label>
+                    <input type="text" class="form-control" id="nombreProducto" name="nombreProducto" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" class="form-control" id="precio" name="precio" required>
+                </div>
+                <div class="form-group">
+                    <label for="cantidadStock">Cantidad en Stock:</label>
+                    <input type="number" class="form-control" id="cantidadStock" name="cantidadStock" required>
+                </div>
+                <div class="form-group">
+                    <label for="marca">Marca:</label>
+                    <input type="text" class="form-control" id="marca" name="marca" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipoProducto">Tipo de Producto:</label>
+                    <input type="number" class="form-control" id="tipoProducto" name="tipoProducto" required>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-dark text-white rounded">Registrar</button>
+
+            </form>
+            <br />
+            <br />
+            <br />
+
+
+        </div>
+    </div>
+</div>
+
