@@ -36,8 +36,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0cmFyQ3VlbnRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/maris/Desktop/FINDGLASSES_REPO/FindGlasses/ProyectoWeb/ProyectoWeb/Views/Productos/ActualizarProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEFjdHVhbGl6YXJQcm9kdWN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/maris/Desktop/FINDGLASSES_REPO/FindGlasses/ProyectoWeb/ProyectoWeb/Views/Productos/ProductosLista.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXFByb2R1Y3Rvc0xpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maris/Desktop/FINDGLASSES_REPO/FindGlasses/ProyectoWeb/ProyectoWeb/Views/Productos/RegistrarProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXFJlZ2lzdHJhclByb2R1Y3RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/maris/Desktop/FINDGLASSES_REPO/FindGlasses/ProyectoWeb/ProyectoWeb/Views/Shared/Error.cshtml]
