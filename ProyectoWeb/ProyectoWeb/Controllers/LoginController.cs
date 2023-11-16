@@ -21,7 +21,6 @@ namespace WEBJN.Controllers
             return View();
         }
 
-
         [HttpGet]
         [FiltroSeguridad]
         public IActionResult CerrarSesion()
@@ -29,7 +28,6 @@ namespace WEBJN.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Login");
         }
-
 
         [HttpGet]
         public IActionResult IniciarSesion()
@@ -46,7 +44,9 @@ namespace WEBJN.Controllers
             {
                 HttpContext.Session.SetString("NombreUsuario", resp.nombre);
                 HttpContext.Session.SetString("TokenUsuario", resp.Token);
-                return RedirectToAction("Index", "Login");
+				HttpContext.Session.SetString("RolUsuario", resp.ConRol.ToString());
+
+				return RedirectToAction("Index", "Login");
             }
             else
             {
@@ -54,7 +54,6 @@ namespace WEBJN.Controllers
                 return View();
             }
         }
-
 
         [HttpGet]
         public IActionResult RegistrarCuenta()
@@ -76,7 +75,6 @@ namespace WEBJN.Controllers
             }
         }
 
-
         [HttpGet]
         public IActionResult RecuperarCuenta()
         {
@@ -97,31 +95,29 @@ namespace WEBJN.Controllers
             }
         }
 
+		[HttpGet]
+		public IActionResult CambiarClaveCuenta(string q)
+		{
+			UsuarioEnt entidad = new UsuarioEnt();
+			entidad.IdUsuarioSeguro = q;
+			return View(entidad);
+		}
 
-        [HttpGet]
-        public IActionResult CambiarClaveCuenta(string q)
-        {
-            UsuarioEnt entidad = new UsuarioEnt();
-            entidad.IdUsuarioSeguro = q;
-            return View(entidad);
-        }
+		[HttpPost]
+		public IActionResult CambiarClaveCuenta(UsuarioEnt entidad)
+		{
+			var resp = _usuarioModel.CambiarClaveCuenta(entidad);
 
-        [HttpPost]
-        public IActionResult CambiarClaveCuenta(UsuarioEnt entidad)
-        {
-            var resp = _usuarioModel.CambiarClaveCuenta(entidad);
+			if (resp == 1)
+				return RedirectToAction("IniciarSesion", "Login");
+			else
+			{
+				ViewBag.MensajePantalla = "No se pudo actualizar su contraseña";
+				return View();
+			}
+		}
 
-            if (resp == 1)
-                return RedirectToAction("IniciarSesion", "Login");
-            else
-            {
-                ViewBag.MensajePantalla = "No se pudo actualizar su contraseña";
-                return View();
-            }
-        }
-
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

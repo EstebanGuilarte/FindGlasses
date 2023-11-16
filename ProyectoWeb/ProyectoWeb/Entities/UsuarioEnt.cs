@@ -14,5 +14,6 @@
         public string Token { get; set; } = string.Empty;
         public long ConRol { get; set; }
         public long ConProvincia { get; set; }
-    }
+		public string contrasennaAnterior { get; set; } = string.Empty;
+	}
 }

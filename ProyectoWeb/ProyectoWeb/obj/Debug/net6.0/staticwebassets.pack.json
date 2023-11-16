@@ -1,527 +1,527 @@
 {
   "Files": [
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ProyectoWeb.bundle.scp.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ProyectoWeb.bundle.scp.css",
       "PackagePath": "staticwebassets\\ProyectoWeb.bundle.scp.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\js\\ConsultaNombreApi.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\js\\ConsultaNombreApi.js",
       "PackagePath": "staticwebassets\\js\\ConsultaNombreApi.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\animate.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\animate.css",
       "PackagePath": "staticwebassets\\template\\css\\animate.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\bootstrap.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\template\\css\\bootstrap.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\custom.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\custom.css",
       "PackagePath": "staticwebassets\\template\\css\\custom.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\flex-slider.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\flex-slider.min.css",
       "PackagePath": "staticwebassets\\template\\css\\flex-slider.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\font-awesome.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\font-awesome.css",
       "PackagePath": "staticwebassets\\template\\css\\font-awesome.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\jquery-ui.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\jquery-ui.css",
       "PackagePath": "staticwebassets\\template\\css\\jquery-ui.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\jquery.fancybox.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\jquery.fancybox.min.css",
       "PackagePath": "staticwebassets\\template\\css\\jquery.fancybox.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\magnific-popup.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\magnific-popup.css",
       "PackagePath": "staticwebassets\\template\\css\\magnific-popup.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\magnific-popup.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\magnific-popup.min.css",
       "PackagePath": "staticwebassets\\template\\css\\magnific-popup.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\nice-select.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\nice-select.css",
       "PackagePath": "staticwebassets\\template\\css\\nice-select.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\niceselect.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\niceselect.css",
       "PackagePath": "staticwebassets\\template\\css\\niceselect.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\owl-carousel.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\owl-carousel.css",
       "PackagePath": "staticwebassets\\template\\css\\owl-carousel.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\reset.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\reset.css",
       "PackagePath": "staticwebassets\\template\\css\\reset.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\responsive.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\responsive.css",
       "PackagePath": "staticwebassets\\template\\css\\responsive.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\slicknav.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\slicknav.min.css",
       "PackagePath": "staticwebassets\\template\\css\\slicknav.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\themify-icons.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\css\\themify-icons.css",
       "PackagePath": "staticwebassets\\template\\css\\themify-icons.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\animate.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\animate.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\animate.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\bootstrap.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\bootstrap.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\flex-slider.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\flex-slider.min.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\flex-slider.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\font-awesome.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\font-awesome.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\font-awesome.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\jquery-ui.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\jquery-ui.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\jquery-ui.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\jquery.fancybox.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\jquery.fancybox.min.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\jquery.fancybox.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\magnific-popup.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\magnific-popup.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\magnific-popup.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\magnific-popup.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\magnific-popup.min.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\magnific-popup.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\nice-select.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\nice-select.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\nice-select.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\niceselect.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\niceselect.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\niceselect.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\owl-carousel.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\owl-carousel.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\owl-carousel.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\reset.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\reset.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\reset.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\responsive.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\responsive.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\responsive.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\slicknav.min.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\slicknav.min.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\slicknav.min.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\themify-icons.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\css\\themify-icons.css",
       "PackagePath": "staticwebassets\\template\\fonts\\css\\themify-icons.css"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.eot",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.svg",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.ttf",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.woff",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.woff2",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\template\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\mail\\mail.php",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\mail\\mail.php",
       "PackagePath": "staticwebassets\\template\\fonts\\mail\\mail.php"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\themify.eot",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\themify.eot",
       "PackagePath": "staticwebassets\\template\\fonts\\themify.eot"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\themify.svg",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\themify.svg",
       "PackagePath": "staticwebassets\\template\\fonts\\themify.svg"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\themify.ttf",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\themify.ttf",
       "PackagePath": "staticwebassets\\template\\fonts\\themify.ttf"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\themify.woff",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\fonts\\themify.woff",
       "PackagePath": "staticwebassets\\template\\fonts\\themify.woff"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\favicon.png",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\favicon.png",
       "PackagePath": "staticwebassets\\template\\images\\favicon.png"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\logo.png",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\logo.png",
       "PackagePath": "staticwebassets\\template\\images\\logo.png"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\logo2.png",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\logo2.png",
       "PackagePath": "staticwebassets\\template\\images\\logo2.png"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\map-marker.png",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\map-marker.png",
       "PackagePath": "staticwebassets\\template\\images\\map-marker.png"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\payment-method.png",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\payment-method.png",
       "PackagePath": "staticwebassets\\template\\images\\payment-method.png"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\payments.png",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\images\\payments.png",
       "PackagePath": "staticwebassets\\template\\images\\payments.png"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\active.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\active.js",
       "PackagePath": "staticwebassets\\template\\js\\active.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\template\\js\\bootstrap.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\easing.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\easing.js",
       "PackagePath": "staticwebassets\\template\\js\\easing.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\facnybox.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\facnybox.min.js",
       "PackagePath": "staticwebassets\\template\\js\\facnybox.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\finalcountdown.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\finalcountdown.min.js",
       "PackagePath": "staticwebassets\\template\\js\\finalcountdown.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\flex-slider.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\flex-slider.js",
       "PackagePath": "staticwebassets\\template\\js\\flex-slider.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\gmap.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\gmap.min.js",
       "PackagePath": "staticwebassets\\template\\js\\gmap.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\jquery-migrate-3.0.0.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\jquery-migrate-3.0.0.js",
       "PackagePath": "staticwebassets\\template\\js\\jquery-migrate-3.0.0.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\jquery-ui.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\jquery-ui.min.js",
       "PackagePath": "staticwebassets\\template\\js\\jquery-ui.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\jquery.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\template\\js\\jquery.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\magnific-popup.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\magnific-popup.js",
       "PackagePath": "staticwebassets\\template\\js\\magnific-popup.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\map-script.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\map-script.js",
       "PackagePath": "staticwebassets\\template\\js\\map-script.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\nicesellect.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\nicesellect.js",
       "PackagePath": "staticwebassets\\template\\js\\nicesellect.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\onepage-nav.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\onepage-nav.min.js",
       "PackagePath": "staticwebassets\\template\\js\\onepage-nav.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\owl-carousel.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\owl-carousel.js",
       "PackagePath": "staticwebassets\\template\\js\\owl-carousel.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\popper.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\template\\js\\popper.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\scrollup.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\scrollup.js",
       "PackagePath": "staticwebassets\\template\\js\\scrollup.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\slicknav.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\slicknav.min.js",
       "PackagePath": "staticwebassets\\template\\js\\slicknav.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\waypoints.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\waypoints.min.js",
       "PackagePath": "staticwebassets\\template\\js\\waypoints.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\ytplayer.min.js",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\js\\ytplayer.min.js",
       "PackagePath": "staticwebassets\\template\\js\\ytplayer.min.js"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\mail\\mail.php",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\mail\\mail.php",
       "PackagePath": "staticwebassets\\template\\mail\\mail.php"
     },
     {
-      "Id": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\style.css",
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\template\\style.css",
       "PackagePath": "staticwebassets\\template\\style.css"
     },
     {

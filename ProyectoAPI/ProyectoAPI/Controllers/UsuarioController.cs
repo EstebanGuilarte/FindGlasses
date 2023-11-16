@@ -25,77 +25,125 @@ namespace APIJN.Controllers
             _utilitarios = utilitarios;
         }
 
-        [HttpGet]
-        [Authorize]
-        [Route("ConsultarUsuario")]
-        public IActionResult ConsultarUsuario()
-        {
-            try
-            {
-                long IdUsuario = long.Parse(_utilitarios.Decrypt(User.Identity.Name.ToString()));
+		[HttpGet]
+		[Authorize]
+		[Route("ConsultarUsuario")]
+		public IActionResult ConsultarUsuario(long q)
+		{
+			try
+			{
+				long IdUsuario = (q != 0 ? q : long.Parse(_utilitarios.Decrypt(User.Identity.Name.ToString())));
 
-                using (var context = new SqlConnection(_connection))
-                {
-                    var datos = context.Query<UsuarioEnt>("ConsultarUsuario",
-                        new { IdUsuario },
-                        commandType: CommandType.StoredProcedure).FirstOrDefault();
+				using (var context = new SqlConnection(_connection))
+				{
+					var datos = context.Query<UsuarioEnt>("ConsultarUsuario",
+						new { IdUsuario },
+						commandType: CommandType.StoredProcedure).FirstOrDefault();
 
-                    return Ok(datos);
-                }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
+					return Ok(datos);
+				}
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
+		}
 
-        [HttpGet]
-        [Authorize]
-        [Route("ConsultarUsuarios")]
-        public IActionResult ConsultarUsuarios()
-        {
-            try
-            {
-                using (var context = new SqlConnection(_connection))
-                {
-                    var datos = context.Query<UsuarioEnt>("ConsultarUsuarios",
-                        new { },
-                        commandType: CommandType.StoredProcedure).ToList();
+		[HttpGet]
+		[Authorize]
+		[Route("ConsultarUsuarios")]
+		public IActionResult ConsultarUsuarios()
+		{
+			try
+			{
+				long IdUsuario = long.Parse(_utilitarios.Decrypt(User.Identity.Name.ToString()));
 
-                    return Ok(datos);
-                }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
+				using (var context = new SqlConnection(_connection))
+				{
+					var datos = context.Query<UsuarioEnt>("ConsultarUsuarios",
+						new { IdUsuario },
+						commandType: CommandType.StoredProcedure).ToList();
 
-        [HttpPut]
-        [Authorize]
-        [Route("ActualizarCuenta")]
-        public IActionResult ActualizarCuenta(UsuarioEnt entidad)
-        {
-            try
-            {
-                long IdUsuario = long.Parse(_utilitarios.Decrypt(User.Identity.Name.ToString()));
+					return Ok(datos);
+				}
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
+		}
 
-                using (var context = new SqlConnection(_connection))
-                {
-                    var datos = context.Execute("ActualizarCuenta",
-                        new { entidad.identificacion, entidad.nombre, entidad.usuario, entidad.correo, entidad.ConProvincia, IdUsuario },
-                        commandType: CommandType.StoredProcedure);
+		[HttpPut]
+		[Authorize]
+		[Route("ActualizarCuenta")]
+		public IActionResult ActualizarCuenta(UsuarioEnt entidad)
+		{
+			try
+			{
+				long IdUsuario = (entidad.IdUsuario != 0 ? entidad.IdUsuario : long.Parse(_utilitarios.Decrypt(User.Identity.Name.ToString())));
 
-                    return Ok(datos);
-                }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
+				using (var context = new SqlConnection(_connection))
+				{
+					var datos = context.Execute("ActualizarCuenta",
+						new { entidad.identificacion, entidad.nombre, entidad.usuario, entidad.correo, entidad.ConProvincia, IdUsuario },
+						commandType: CommandType.StoredProcedure);
 
-        [HttpGet]
+					return Ok(datos);
+				}
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
+		}
+
+		[HttpPut]
+		[Authorize]
+		[Route("CambiarClave")]
+		public IActionResult CambiarClave(UsuarioEnt entidad)
+		{
+			try
+			{
+				long IdUsuario = long.Parse(_utilitarios.Decrypt(User.Identity.Name.ToString()));
+
+				using (var context = new SqlConnection(_connection))
+				{
+					var datos = context.Execute("CambiarClave",
+						new { IdUsuario, entidad.contrasennaAnterior, entidad.contrasenna },
+						commandType: CommandType.StoredProcedure);
+
+					return Ok(datos);
+				}
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
+		}
+
+		[HttpPut]
+		[Authorize]
+		[Route("ActualizarEstadoUsuario")]
+		public IActionResult ActualizarEstadoUsuario(UsuarioEnt entidad)
+		{
+			try
+			{
+				using (var context = new SqlConnection(_connection))
+				{
+					var datos = context.Execute("ActualizarEstadoUsuario",
+						new { entidad.IdUsuario },
+						commandType: CommandType.StoredProcedure);
+
+					return Ok(datos);
+				}
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
+		}
+
+		[HttpGet]
         [Authorize]
         [Route("ConsultarProvincias")]
         public IActionResult ConsultarProvincias()
@@ -116,6 +164,5 @@ namespace APIJN.Controllers
                 return BadRequest(ex.Message);
             }
         }        
-
     }
 }

@@ -935,3 +935,4 @@ L:\Tercer cuatri 2023\Progra Avanzada\ProyectoEnGrupó\FindGlasses\ProyectoWeb\P
 L:\Tercer cuatri 2023\Progra Avanzada\ProyectoEnGrupó\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ProyectoWeb.genruntimeconfig.cache
 L:\Tercer cuatri 2023\Progra Avanzada\ProyectoEnGrupó\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ref\ProyectoWeb.dll
 L:\Tercer cuatri 2023\Progra Avanzada\ProyectoEnGrupó\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout_ProductosLista.cshtml.rz.scp.css
+C:\Users\eagui\source\repos\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout_ProductosLista.cshtml.rz.scp.css

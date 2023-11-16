@@ -16,3 +16,10 @@
         $("#nombre").val("");
     }
 }
+
+function EvitarEspacios(evt) {
+    if (evt.keyCode === 32) {
+        return false;
+    }
+    return true;
+}
