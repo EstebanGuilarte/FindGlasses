@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ProyectoWeb.Entities.ProductosEnt>
+﻿@model List<ProyectoWeb.Entities.ProductosEnt>
 
 @{
     ViewData["Title"] = "ProductosLista";
@@ -19,60 +19,46 @@
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th>Id Producto</th>
-                    <th>Nombre Producto</th>
+                    <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Precio</th>
-                    <th>Cantidad Stock</th>
+                    <th>Cantidad</th>
                     <th>Marca</th>
                     <th>Tipo Producto</th>
+                    <th>Estado</th>
+                    <th>Imagen</th>
+                    <th>Cambiar Estado</th>
                     <th>Actualizar</th>
-                    <th>Eliminar</th>
+                   
                 </tr>
             </thead>
             <tbody>
                 @foreach (var producto in Model)
                 {
                     <tr>
-                        <td>@producto.IdProducto</td>
                         <td>@producto.nombreProducto</td>
                         <td>@producto.descripcion</td>
                         <td>@producto.precio</td>
                         <td>@producto.cantidadStock</td>
                         <td>@producto.marca</td>
                         <td>@producto.tipoProducto</td>
-                        <td>
-                            <a class="btn btn-dark btn-sm text-white rounded" href="@Url.Action("ActualizarProducto", "Productos", new { id = producto.IdProducto })">Actualizar</a>
-                        </td>
-                        <td>
-                            <button class="btn btn-dark btn-sm text-white rounded" onclick="eliminarProducto(@producto.IdProducto)">Eliminar</button>
-                        </td>
+
+                        @if (@producto.estado)
+                        {
+                            <td>Activo</td>
+                        }
+                        else
+                        {
+                            <td>Inactivo</td>
+                        }
+                        <td style="text-align:center"><img src=@producto.Imagen style="width:150px; height:150px; border-radius:0px"></td>
+                        
+                        <td style="text-align:center"><a href="@Url.Action("ActualizarEstadoProducto","Productos", new { q = producto.IdProducto })"><i class="fa fa-exchange fa-lg"></i></a></td>
+                        <td style="text-align:center"><a href="@Url.Action("ActualizarProducto","Productos", new { id = producto.IdProducto })"><i class="fa fa-pencil fa-lg"></i></a></td>
+                        
                     </tr>
                 }
             </tbody>
         </table>
     </div>
 </div>
-
-<!-- Agregar este script por aparte después -->
-@section scripts {
-    <script>
-        function eliminarProducto(id) {
-            if (confirm("¿Estás seguro de que deseas eliminar este producto?")) {
-
-                $.ajax({
-                    url: '@Url.Action("EliminarProducto", "Productos")/' + id,
-                    type: 'DELETE',
-                    success: function (data) {
-                        alert(data);
-                        location.reload();
-                    },
-                    error: function () {
-                        alert('Error al intentar eliminar el producto.');
-                    }
-                });
-            }
-        }
-    </script>
-}
-

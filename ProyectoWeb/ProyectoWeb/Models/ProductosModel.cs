@@ -4,6 +4,7 @@ using System.Net.Http.Headers;
 using ProyectoWeb.Entities;
 using System.Threading.Tasks;
 using System.Net;
+using NuGet.Common;
 
 namespace ProyectoWeb.Models
 {
@@ -22,37 +23,30 @@ namespace ProyectoWeb.Models
             _urlApi = _configuration.GetSection("Llaves:urlApi").Value;
         }
 
-
-        public List<ProductosEnt> ConsultarProductos()
+        public List<ProductosEnt>? ConsultarProductos()
         {
             string url = _urlApi + "api/Productos/ConsultarProductos";
-            string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
-
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var resp = _httpClient.GetAsync(url).Result;
 
             if (resp.IsSuccessStatusCode)
                 return resp.Content.ReadFromJsonAsync<List<ProductosEnt>>().Result;
             else
-                return new List<ProductosEnt>();
+                return null;
         }
 
-        public bool RegistrarProducto(ProductosEnt entidad)
+        public long RegistrarProducto(ProductosEnt entidad)
         {
-            try
-            {
-                string url = _urlApi + "api/Productos/RegistrarProducto";
-                string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
+            string url = _urlApi + "api/Productos/RegistrarProducto";
+            string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
 
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                var resp = _httpClient.PostAsJsonAsync(url, entidad).Result;
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            JsonContent obj = JsonContent.Create(entidad);
+            var resp = _httpClient.PostAsync(url, obj).Result;
 
-                return resp.IsSuccessStatusCode;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            if (resp.IsSuccessStatusCode)
+                return resp.Content.ReadFromJsonAsync<long>().Result;
+            else
+                return 0;
         }
 
         public ProductosEnt ConsultarProductoPorId(long id)
@@ -69,44 +63,48 @@ namespace ProyectoWeb.Models
                 return null;
         }
 
-        public bool ActualizarProducto(ProductosEnt entidad)
+        public int ActualizarProducto2(ProductosEnt entidad)
         {
-            try
-            {
-                string url = _urlApi + "api/Productos/ActualizarProducto";
-                string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
+            string url = _urlApi + "api/Productos/ActualizarProducto";
+            string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
 
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                var resp = _httpClient.PutAsJsonAsync(url, entidad).Result;
+            JsonContent obj = JsonContent.Create(entidad);
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var resp = _httpClient.PutAsync(url, obj).Result;
 
-                return resp.IsSuccessStatusCode;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            if (resp.IsSuccessStatusCode)
+                return resp.Content.ReadFromJsonAsync<int>().Result;
+            else
+                return 0;
         }
 
-        public bool EliminarProducto(long idProducto)
+        // Para el Dropdown
+        public List<SelectListItem>? ConsultarTipoProducto()
         {
-            try
-            {
-                string url = $"{_urlApi}api/Productos/EliminarProducto/{idProducto}";
-                string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
 
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                var resp = _httpClient.DeleteAsync(url).Result;
+            string url = _urlApi + "api/Productos/ConsultarTipoProducto";
+            var resp = _httpClient.GetAsync(url).Result;
 
-                return resp.IsSuccessStatusCode;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            if (resp.IsSuccessStatusCode)
+                return resp.Content.ReadFromJsonAsync<List<SelectListItem>>().Result;
+            else
+                return null;
         }
 
+        public int ActualizarEstadoProducto(ProductosEnt entidad)
+        {
+            string url = _urlApi + "api/Productos/ActualizarEstadoProducto";
+            string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
 
+            JsonContent obj = JsonContent.Create(entidad);
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var resp = _httpClient.PutAsync(url, obj).Result;
 
+            if (resp.IsSuccessStatusCode)
+                return resp.Content.ReadFromJsonAsync<int>().Result;
+            else
+                return 0;
+        }
 
     }
 }

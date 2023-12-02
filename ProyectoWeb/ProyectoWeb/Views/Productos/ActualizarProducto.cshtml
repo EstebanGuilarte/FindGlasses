@@ -13,13 +13,15 @@
                 <h2 class="text-center">Actualizar Producto</h2>
             </div>
 
-            @using (Html.BeginForm("ActualizarProducto", "Productos", FormMethod.Post, new { @class = "pt-3" }))
+            @using (Html.BeginForm("ActualizarProducto2", "Productos", FormMethod.Post, new { @class = "pt-3", @enctype = "multipart/form-data" }))
             {
+                @ViewBag.MensajePantalla
+
                 @Html.HiddenFor(m => m.IdProducto)
 
                 <div class="form-group">
                     <label>Nombre del Producto</label>
-                    @Html.TextBoxFor(m => m.nombreProducto, new { @class = "form-control", @placeholder = "Nombre del Producto", required = "required" })
+                    @Html.TextBoxFor(m => m.nombreProducto, new { @class = "form-control", @placeholder = "Nombre del Producto" })
                 </div>
                 <div class="form-group">
                     <label>Descripción</label>
@@ -28,12 +30,12 @@
                 <div class="form-group">
                     <label>Precio</label>
                     <div class="input-group">
-                        @Html.TextBoxFor(m => m.precio, new { @class = "form-control", @type = "number", @placeholder = "Precio", step = "0.01", required = "required" })
+                        @Html.TextBoxFor(m => m.precio, new { @class = "form-control", @type = "number", @placeholder = "Precio", step = "0.01" })
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Cantidad en Stock</label>
-                    @Html.TextBoxFor(m => m.cantidadStock, new { @class = "form-control", @type = "number", @placeholder = "Cantidad en Stock", required = "required" })
+                    @Html.TextBoxFor(m => m.cantidadStock, new { @class = "form-control", @type = "number", @placeholder = "Cantidad en Stock" })
                 </div>
                 <div class="form-group">
                     <label>Marca</label>
@@ -41,7 +43,14 @@
                 </div>
                 <div class="form-group">
                     <label>Tipo de Producto</label>
-                    @Html.TextBoxFor(m => m.tipoProducto, new { @class = "form-control", @type = "number", @placeholder = "Tipo de Producto", required = "required" })
+                    <br />
+                    @Html.DropDownListFor(m => m.tipoProducto, ViewData["tipoProducto"] as IEnumerable<SelectListItem>, new { @class = "form-control" })
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <label>Imagen</label>
+                    <input type="file" id="ImgProducto" accept="image/png" name="ImgProducto" class="form-control form-control-lg">
                 </div>
                 <br />
                 <div class="text-center">

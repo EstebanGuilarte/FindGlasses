@@ -5,10 +5,12 @@ namespace ProyectoWeb.Models
 {
     public interface IProductosModel
     {
-        List<ProductosEnt> ConsultarProductos();
-        bool RegistrarProducto(ProductosEnt entidad);
-        ProductosEnt ConsultarProductoPorId(long id);
-        bool ActualizarProducto(ProductosEnt entidad);
-        bool EliminarProducto(long idProducto);
+        public List<ProductosEnt>? ConsultarProductos();
+        public long RegistrarProducto(ProductosEnt entidad);
+        public ProductosEnt ConsultarProductoPorId(long id);
+        public int ActualizarProducto2(ProductosEnt entidad);
+        public List<SelectListItem>? ConsultarTipoProducto();
+        public int ActualizarEstadoProducto(ProductosEnt entidad);
+
     }
 }

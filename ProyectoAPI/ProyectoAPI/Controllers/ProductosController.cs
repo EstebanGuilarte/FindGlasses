@@ -58,9 +58,9 @@ namespace ProyectoAPI.Controllers
             {
                 using (var context = new SqlConnection(_connection))
                 {
-                    var datos = context.Execute("RegistrarProducto",
+                    var datos = context.Query<long>("RegistrarProducto",
                         new { entidad.nombreProducto, entidad.descripcion, entidad.precio, entidad.cantidadStock, entidad.marca, entidad.tipoProducto },
-                        commandType: CommandType.StoredProcedure);
+                        commandType: CommandType.StoredProcedure).FirstOrDefault();
 
                     return Ok(datos);
                 }
@@ -123,38 +123,6 @@ namespace ProyectoAPI.Controllers
             }
         }
 
-        //[Authorize(Roles = "Admin")] 
-
-        //Revisar a detalle este método
-        [HttpDelete]
-        [AllowAnonymous]
-        [Route("EliminarProducto/{idProducto}")]
-        public IActionResult EliminarProducto(long idProducto)
-        {
-            try
-            {
-                // Verificar si el ID proporcionado es válido.
-                if (idProducto < 0)
-                {
-                    return BadRequest("ID de producto no válido.");
-                }
-
-                using (var context = new SqlConnection(_connection))
-                {
-                    var datos = context.Execute("EliminarProducto",
-                        new { IdProducto = idProducto },
-                        commandType: CommandType.StoredProcedure);
-
-                    return Ok(datos);
-
-                }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet] //PARA EL DROPDOWN
         [AllowAnonymous]
         [Route("ConsultarTipoProducto")]
@@ -177,6 +145,27 @@ namespace ProyectoAPI.Controllers
             }
         }
 
+        [HttpPut]
+        [AllowAnonymous]
+        [Route("ActualizarEstadoProducto")]
+        public IActionResult ActualizarEstadoProducto(ProductosEnt entidad)
+        {
+            try
+            {
+                using (var context = new SqlConnection(_connection))
+                {
+                    var datos = context.Execute("ActualizarEstadoProducto",
+                        new { entidad.IdProducto },
+                        commandType: CommandType.StoredProcedure);
+
+                    return Ok(datos);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
 

@@ -1,18 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR.Protocol;
 using ProyectoWeb.Entities;
 using ProyectoWeb.Models;
 using System.Diagnostics;
 
 namespace ProyectoWeb.Controllers
 {
-
+    [ResponseCache(NoStore = true, Duration = 0)]
     public class ProductosController : Controller
     {
         private readonly IProductosModel _productosModel;
+        private IHostEnvironment _hostingEnvironment;
 
-        public ProductosController(IProductosModel productoModel)
+        public ProductosController(IProductosModel productoModel, IHostEnvironment hostingEnvironment)
         {
             _productosModel = productoModel;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         [HttpGet]
@@ -27,21 +30,41 @@ namespace ProyectoWeb.Controllers
         [FiltroSeguridad]
         public IActionResult RegistrarProducto()
         {
+
+            ViewBag.TipoProducto = _productosModel.ConsultarTipoProducto();
             return View();
         }
 
         [HttpPost]
         [FiltroSeguridad]
-        public IActionResult RegistrarProducto(ProductosEnt entidad)
+        public IActionResult RegistrarProducto(IFormFile ImgProducto, ProductosEnt entidad)
         {
-            if (_productosModel.RegistrarProducto(entidad))
+            string ext = Path.GetExtension(Path.GetFileName(ImgProducto.FileName));
+            string folder = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot\\images");
+
+            if (ext.ToLower() != ".png")
             {
-                return RedirectToAction("ProductosLista");
+                ViewBag.MensajePantalla = "La imagen debe ser .png";
+                return View();
             }
-            else
+
+            var IdProducto = _productosModel.RegistrarProducto(entidad);
+            ViewBag.ConsultarTipoProducto = _productosModel.ConsultarTipoProducto();
+
+            if (IdProducto > 0)
             {
-                return View(entidad);
+                string archivo = Path.Combine(folder, IdProducto + ext);
+                using (Stream fileStream = new FileStream(archivo, FileMode.Create))
+                {
+                    ImgProducto.CopyTo(fileStream);
+                }
+
+                return RedirectToAction("ProductosLista", "Productos");
             }
+
+            ViewBag.MensajePantalla = "No se pudo registrar el producto";
+            return View();
+            
         }
 
         [HttpGet]
@@ -56,8 +79,19 @@ namespace ProyectoWeb.Controllers
             }
             else
             {
-                return RedirectToAction("ProductosLista");
+                return RedirectToAction("ProductosLista", "Productos");
             }
+        }
+
+        [HttpGet]
+        [FiltroSeguridad]
+        public IActionResult ActualizarEstadoProducto(long q)
+        {
+            var entidad = new ProductosEnt();
+            entidad.IdProducto = q;
+
+            _productosModel.ActualizarEstadoProducto(entidad);
+            return RedirectToAction("ProductosLista", "Productos");
         }
 
         [HttpGet]
@@ -66,6 +100,8 @@ namespace ProyectoWeb.Controllers
         {
             // Obtener el producto por id 
             var producto = _productosModel.ConsultarProductoPorId(id);
+            ViewData["tipoProducto"] = _productosModel.ConsultarTipoProducto();
+
 
             if (producto != null)
             {
@@ -79,37 +115,53 @@ namespace ProyectoWeb.Controllers
 
         [HttpPost]
         [FiltroSeguridad]
-        public IActionResult ActualizarProducto(ProductosEnt entidad)
+        public IActionResult ActualizarProducto2(IFormFile ImgProducto, ProductosEnt entidad)
         {
-            if (_productosModel.ActualizarProducto(entidad))
+            string ext = string.Empty;
+            string folder = string.Empty;
+            string archivo = string.Empty;
+
+            if (ImgProducto != null)
             {
-                return RedirectToAction("ProductosLista");
+                ext = Path.GetExtension(Path.GetFileName(ImgProducto.FileName));
+                folder = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot\\images");
+                archivo = Path.Combine(folder, entidad.IdProducto + ext);
+
+                if (ext.ToLower() != ".png")
+                {
+                    ViewBag.MensajePantalla = "La imagen debe ser .png";
+                    return View();
+                }
+            }
+
+            var resp = _productosModel.ActualizarProducto2(entidad);
+            ViewData["tipoProducto"] = _productosModel.ConsultarTipoProducto();
+
+            if (resp == 1)
+            {
+                if (ImgProducto != null)
+                {
+                    using (Stream fileStream = new FileStream(archivo, FileMode.Create))
+                    {
+                        ImgProducto.CopyTo(fileStream);
+                    }
+                }
+
+                return RedirectToAction("ProductosLista", "Productos");
             }
             else
             {
+                ViewBag.MensajePantalla = "No se pudo actualizar el producto";
                 return View(entidad);
             }
         }
-
-        //Error Pendiente
-        [HttpPost]
-        [FiltroSeguridad]
-        public IActionResult EliminarProducto(ProductosEnt entidad)
+        
+        [HttpGet]
+        public IActionResult ConsultarTipoProducto()
         {
-            var exito = _productosModel.EliminarProducto(entidad.IdProducto);
-
-            if (exito)
-            {
-                TempData["Mensaje"] = $"Se eliminó el producto con ID: {entidad.IdProducto}";
-            }
-            else
-            {
-                TempData["Mensaje"] = $"No se encontró el producto con ID: {entidad.IdProducto}";
-            }
-
-            return RedirectToAction("ProductosLista");
+            ViewBag.ConsultarTipoProducto = _productosModel.ConsultarTipoProducto();
+            return View();
         }
-
 
 
     }
