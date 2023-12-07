@@ -2,16 +2,20 @@
 
 @{
     ViewData["Title"] = "ConsultarUsuarios";
-    Layout = "~/Views/Shared/_Layout_Usuarios.cshtml";
+    Layout = "~/Views/Shared/_Layout_Administracion.cshtml";
 }
 
-<div class="col-12 grid-margin stretch-card">
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">Información de Usuarios</h4>
+<div class="col-lg-10 mx-auto">
+    <div class="text-center">
+            <h1>Lista de Usuarios</h1>
+    </div>
 
+    <br />
+
+    <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0 col-lg-12">
             <table class="table table-bordered">
-                <thead>
+                <thead class="thead-dark">
                     <tr>
                         <th>Identificación</th>
                         <th>Nombre</th>
@@ -38,13 +42,20 @@
                                 <td>Inactivo</td>
                             }
 
-                            <td style="text-align:center"><a href="@Url.Action("ActualizarEstadoUsuario","Usuario", new { q = item.IdUsuario })"><i class="fa fa-exchange fa-lg"></i></a></td>
-                            <td style="text-align:center"><a href="@Url.Action("ActualizarUsuario","Usuario", new { q = item.IdUsuario })"><i class="fa fa-user fa-lg"></i></a></td>
+                            <td style="text-align:center">
+                                <a href="@Url.Action("ActualizarEstadoUsuario","Usuario", new { q = item.IdUsuario })">
+                                    <i class="fa fa-exchange fa-lg"></i>
+                                </a>
+                            </td>
+                            <td style="text-align:center">
+                                <a href="@Url.Action("ActualizarUsuario","Usuario", new { q = item.IdUsuario })">
+                                    <i class="fa fa-user fa-lg"></i>
+                                </a>
+                            </td>
                         </tr>
                     }
                 </tbody>
             </table>
         </div>
     </div>
-    &nbsp;
 </div>

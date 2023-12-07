@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3jSuAY1OpS++0npTRg6wMp0hbEq44q5mPY78hYfs7QY=",
+  "Hash": "K2hcx+1Hj4KZ1jbRmRxFpdigFnyFDxKzWDfULpFxBSI=",
   "Source": "ProyectoWeb",
   "BasePath": "_content/ProyectoWeb",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\31.png",
+      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\1.png",
       "SourceId": "ProyectoWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\",
       "BasePath": "_content/ProyectoWeb",
-      "RelativePath": "images/31.png",
+      "RelativePath": "images/1.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,15 +109,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\31.png"
+      "OriginalItemSpec": "wwwroot\\images\\1.png"
     },
     {
-      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\32.png",
+      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\2.png",
       "SourceId": "ProyectoWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\",
       "BasePath": "_content/ProyectoWeb",
-      "RelativePath": "images/32.png",
+      "RelativePath": "images/2.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,15 +128,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\32.png"
+      "OriginalItemSpec": "wwwroot\\images\\2.png"
     },
     {
-      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\33.png",
+      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\3.png",
       "SourceId": "ProyectoWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\",
       "BasePath": "_content/ProyectoWeb",
-      "RelativePath": "images/33.png",
+      "RelativePath": "images/3.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,15 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\33.png"
+      "OriginalItemSpec": "wwwroot\\images\\3.png"
     },
     {
-      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\34.png",
+      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\4.png",
       "SourceId": "ProyectoWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\",
       "BasePath": "_content/ProyectoWeb",
-      "RelativePath": "images/34.png",
+      "RelativePath": "images/4.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,15 +166,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\34.png"
+      "OriginalItemSpec": "wwwroot\\images\\4.png"
     },
     {
-      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\35.png",
+      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\5.png",
       "SourceId": "ProyectoWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\",
       "BasePath": "_content/ProyectoWeb",
-      "RelativePath": "images/35.png",
+      "RelativePath": "images/5.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,15 +185,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\35.png"
+      "OriginalItemSpec": "wwwroot\\images\\5.png"
     },
     {
-      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\36.png",
+      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\6.png",
       "SourceId": "ProyectoWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\",
       "BasePath": "_content/ProyectoWeb",
-      "RelativePath": "images/36.png",
+      "RelativePath": "images/6.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,7 +204,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\36.png"
+      "OriginalItemSpec": "wwwroot\\images\\6.png"
     },
     {
       "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\js\\ConsultaNombreApi.js",

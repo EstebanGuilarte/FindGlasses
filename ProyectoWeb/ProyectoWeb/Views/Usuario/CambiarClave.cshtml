@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "CambiarClaveCuenta";
-    Layout = "~/Views/Shared/_Layout_Login.cshtml";
+    Layout = "~/Views/Shared/_Layout_Administracion.cshtml";
 }
 
 <div class="content-wrapper d-flex align-items-center auth px-0">
@@ -10,7 +10,7 @@
         <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
                 <div class="brand-logo">
-                    <h1>FindGlasses</h1>
+                    <h1>Cambiar Contraseña</h1>
                 </div>
 
                 @using (Html.BeginForm("CambiarClave", "Usuario", FormMethod.Post, new { @class = "pt-3" }))
