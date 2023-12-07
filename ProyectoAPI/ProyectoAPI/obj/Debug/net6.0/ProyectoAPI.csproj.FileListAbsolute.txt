@@ -198,3 +198,4 @@ C:\Users\maris\Desktop\FinGlasesEliminar\FindGlasses\ProyectoAPI\ProyectoAPI\obj
 C:\Users\maris\Desktop\FinGlasesEliminar\FindGlasses\ProyectoAPI\ProyectoAPI\obj\Debug\net6.0\ProyectoAPI.pdb
 C:\Users\maris\Desktop\FinGlasesEliminar\FindGlasses\ProyectoAPI\ProyectoAPI\obj\Debug\net6.0\ProyectoAPI.genruntimeconfig.cache
 C:\Users\maris\Desktop\FinGlasesEliminar\FindGlasses\ProyectoAPI\ProyectoAPI\obj\Debug\net6.0\ref\ProyectoAPI.dll
+C:\Users\eagui\source\repos\FindGlasses\ProyectoAPI\ProyectoAPI\obj\Debug\net6.0\ProyectoAPI.sourcelink.json

@@ -5,24 +5,24 @@ namespace ProyectoWeb.Models
 {
     public interface IUsuarioModel
     {
-		public UsuarioEnt? IniciarSesion(UsuarioEnt entidad);
+        public UsuarioEnt? IniciarSesion(UsuarioEnt entidad);
 
-		public int RegistrarCuenta(UsuarioEnt entidad);
+        public int RegistrarCuenta(UsuarioEnt entidad);
 
-		public int RecuperarCuenta(UsuarioEnt entidad);
+        public int RecuperarCuenta(UsuarioEnt entidad);
 
-		public int CambiarClaveCuenta(UsuarioEnt entidad);
+        public int CambiarClaveCuenta(UsuarioEnt entidad);
 
-		public int CambiarClave(UsuarioEnt entidad);
-		
-		public UsuarioEnt? ConsultarUsuario(long q);
+        public UsuarioEnt? ConsultarUsuario(long q);
 
-		public List<UsuarioEnt>? ConsultarUsuarios();
+        public List<UsuarioEnt>? ConsultarUsuarios();
 
-		public int ActualizarCuenta(UsuarioEnt entidad);
+        public int ActualizarCuenta(UsuarioEnt entidad);
 
-		public int ActualizarEstadoUsuario(UsuarioEnt entidad);
+        public int CambiarClave(UsuarioEnt entidad);
 
-		public List<SelectListItem>? ConsultarProvincias();
-	}
+        public int ActualizarEstadoUsuario(UsuarioEnt entidad);
+
+        public List<SelectListItem>? ConsultarProvincias();
+    }
 }

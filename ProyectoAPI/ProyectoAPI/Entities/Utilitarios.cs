@@ -65,12 +65,11 @@ namespace ProyectoAPI.Entities
             client.Send(msg);
         }
 
-        public string GenerarToken(string idUsuario)
+        public string GenerarToken(string idUsuario, string conRol)
         {
-            List<Claim> claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, Encrypt(idUsuario))
-            };
+            List<Claim> claims = new List<Claim>();
+            claims.Add(new Claim("username", Encrypt(idUsuario)));
+            claims.Add(new Claim("userrol", Encrypt(conRol)));
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Ty1UELmVFKQmMD4af0a4jvfZS30cXu3U"));
             var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
@@ -81,6 +80,23 @@ namespace ProyectoAPI.Entities
                 signingCredentials: cred);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        public long ObtenerUsuario(IEnumerable<Claim> valores)
+        {
+            var claims = valores.Select(Claim => new { Claim.Type, Claim.Value }).ToArray();
+            return long.Parse(Decrypt(claims.Where(x => x.Type == "username").ToList().FirstOrDefault().Value));
+        }
+
+        public bool IsAdmin(IEnumerable<Claim> valores)
+        {
+            var claims = valores.Select(Claim => new { Claim.Type, Claim.Value }).ToArray();
+            var userrol = Decrypt(claims.Where(x => x.Type == "userrol").ToList().FirstOrDefault().Value);
+
+            if (userrol == "1")
+                return true;
+
+            return false;
         }
 
         public string Encrypt(string texto)

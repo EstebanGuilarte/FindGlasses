@@ -25,25 +25,20 @@
 
 </head>
 <body class="js">
-    <!-- Header -->
     <header class="header shop">
         <div class="middle-inner">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-12">
-                        <!-- Search Form -->
                         <div class="search-top">
                             <div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
-                            <!-- Search Form -->
                             <div class="search-top">
                                 <form class="search-form">
                                     <input type="text" placeholder="Buscar..." name="search">
                                     <button value="search" type="submit"><i class="ti-search"></i></button>
                                 </form>
                             </div>
-                            <!--/ End Search Form -->
                         </div>
-                        <!--/ End Search Form -->
                         <div class="mobile-nav"></div>
                     </div>
                     <div class="col-lg-5 col-md-7 col-12">
@@ -97,18 +92,28 @@
                                             @if (Context.Session.GetString("NombreUsuario") != null)
                                             {
                                                 <a class="dropdown-item" href="@Url.Action("PerfilUsuario","Usuario")">
-                                                    <i class="ti-settings text-primary"></i>
+                                                    <i class="ti-user text-primary"></i>
                                                     Perfil
                                                 </a>
-                                                <a class="dropdown-item" href="@Url.Action("ConsultarUsuarios", "Usuario")">
-                                                    <i class="ti-settings text-primary"></i>
-                                                    Usuarios
-                                                </a>
+
 
                                                 <a class="dropdown-item" href="@Url.Action("CambiarClave","Usuario")">
-                                                    <i class="ti-settings text-primary"></i>
+                                                    <i class="ti-key text-primary"></i>
                                                     Cambiar Contraseña
                                                 </a>
+
+                                                @if (Context.Session.GetString("RolUsuario") == "1")
+                                                {
+                                                    <a class="dropdown-item" href="@Url.Action("ConsultarUsuarios", "Usuario")">
+                                                        <i class="ti-settings text-primary"></i>
+                                                        Administrar Usuarios
+                                                    </a>
+
+                                                    <a class="dropdown-item" href="@Url.Action("ProductosLista", "Productos")">
+                                                        <i class="ti-menu-alt text-primary"></i>
+                                                        Administrar Productos
+                                                    </a>
+                                                }
 
                                                 <a class="dropdown-item" href="@Url.Action("CerrarSesion","Login")">
                                                     <i class="ti-power-off text-primary"></i>
@@ -153,20 +158,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-9 col-12">
-                            <div class="menu-area">
-                                <nav class="navbar navbar-expand-lg">
-                                    <div class="navbar-collapse">
-                                        <div class="nav-inner">
-                                            <ul class="nav main-menu menu navbar-nav">
-                                                <li class="active"><a href="#">Inicio</a></li>
-                                                <li><a href="@Url.Action("ProductosLista","Productos")">Productos</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -174,7 +165,6 @@
     </header>
 
     <section class="hero-slider">
-        <!-- Single Slider -->
         <div class="single-slider">
             <div class="container">
                 <div class="row no-gutters">
@@ -196,7 +186,6 @@
                 </div>
             </div>
         </div>
-        <!--/ End Single Slider -->
     </section>
 
     <section class="small-banner section">

@@ -1554,19 +1554,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maris\\.nuget\\packages\\": {}
+    "C:\\Users\\eagui\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maris\\Desktop\\FinGlasesEliminar\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\ProyectoAPI.csproj",
+      "projectUniqueName": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\ProyectoAPI.csproj",
       "projectName": "ProyectoAPI",
-      "projectPath": "C:\\Users\\maris\\Desktop\\FinGlasesEliminar\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\ProyectoAPI.csproj",
-      "packagesPath": "C:\\Users\\maris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maris\\Desktop\\FinGlasesEliminar\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\obj\\",
+      "projectPath": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\ProyectoAPI.csproj",
+      "packagesPath": "C:\\Users\\eagui\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eagui\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1632,7 +1632,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

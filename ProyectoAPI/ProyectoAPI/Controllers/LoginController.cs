@@ -25,59 +25,60 @@ namespace APIJN.Controllers
             _utilitarios = utilitarios;
         }
 
-		[HttpPost]
-		[AllowAnonymous]
-		[Route("IniciarSesion")]
-		public IActionResult IniciarSesion(UsuarioEnt entidad)
-		{
-			try
-			{
-				using (var context = new SqlConnection(_connection))
-				{
-					var datos = context.Query<UsuarioEnt>("IniciarSesion",
-						new { entidad.usuario, entidad.contrasenna },
-						commandType: CommandType.StoredProcedure).FirstOrDefault();
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("IniciarSesion")]
+        public IActionResult IniciarSesion(UsuarioEnt entidad)
+        {
+            try
+            {
+                using (var context = new SqlConnection(_connection))
+                {
+                    var datos = context.Query<UsuarioEnt>("IniciarSesion",
+                        new { entidad.usuario, entidad.contrasenna },
+                        commandType: CommandType.StoredProcedure).FirstOrDefault();
 
-					if (datos != null)
-					{
-						datos.Token = _utilitarios.GenerarToken(datos.IdUsuario.ToString());
-						return Ok(datos);
-					}
-					else
-					{
-						return BadRequest("No se logró validar su información");
-					}
-				}
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
+                    if (datos != null)
+                    {
+                        datos.Token = _utilitarios.GenerarToken(datos.IdUsuario.ToString(), datos.ConRol.ToString());
+                        return Ok(datos);
+                    }
+                    else
+                    {
+                        return BadRequest("No se logró validar su información");
+                    }
 
-		[HttpPost]
-		[AllowAnonymous]
-		[Route("RegistrarCuenta")]
-		public IActionResult RegistrarCuenta(UsuarioEnt entidad)
-		{
-			try
-			{
-				using (var context = new SqlConnection(_connection))
-				{
-					var datos = context.Execute("RegistrarCuenta",
-						new { entidad.identificacion, entidad.nombre, entidad.usuario, entidad.correo, entidad.contrasenna },
-						commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
-					return Ok(datos);
-				}
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("RegistrarCuenta")]
+        public IActionResult RegistrarCuenta(UsuarioEnt entidad)
+        {
+            try
+            {
+                using (var context = new SqlConnection(_connection))
+                {
+                    var datos = context.Execute("RegistrarCuenta",
+                        new { entidad.identificacion, entidad.nombre, entidad.usuario, entidad.correo, entidad.contrasenna },
+                        commandType: CommandType.StoredProcedure);
 
-		[HttpPost]
+                    return Ok(datos);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
         [AllowAnonymous]
         [Route("RecuperarCuenta")]
         public IActionResult RecuperarCuenta(UsuarioEnt entidad)

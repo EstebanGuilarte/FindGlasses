@@ -1392,3 +1392,4 @@ C:\Users\maris\Desktop\FinGlasesEliminar\FindGlasses\ProyectoWeb\ProyectoWeb\obj
 C:\Users\maris\Desktop\FinGlasesEliminar\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ProyectoWeb.pdb
 C:\Users\maris\Desktop\FinGlasesEliminar\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ProyectoWeb.genruntimeconfig.cache
 C:\Users\maris\Desktop\FinGlasesEliminar\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ref\ProyectoWeb.dll
+C:\Users\eagui\source\repos\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ProyectoWeb.sourcelink.json

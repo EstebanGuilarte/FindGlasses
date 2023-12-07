@@ -5,7 +5,6 @@ namespace ProyectoWeb.Entities
 {
     public class FiltroSeguridad : ActionFilterAttribute
     {
-
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             if (context.HttpContext.Session.GetString("TokenUsuario") == null)
