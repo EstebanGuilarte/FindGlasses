@@ -42,7 +42,7 @@
                                                                 <input type="number" id="cnt-@item.IdProducto" style="width: 4em;">
                                                             </div>
                                                             <div class="product-action-2">
-                                                                <a title="Add to cart" href="#"><strong>Agregar al carrito</strong></a>
+                                                                <a title="Add to cart" onclick="AgregarCarrito(@item.IdProducto, @item.cantidadStock)"><strong>Agregar al carrito</strong></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -75,7 +75,7 @@
                                                                 <input type="number" id="cnt-@item.IdProducto" style="width: 4em;">
                                                             </div>
                                                             <div class="product-action-2">
-                                                                <a title="Add to cart" href="#"><strong>Agregar al carrito</strong></a>
+                                                                <a title="Add to cart" onclick="AgregarCarrito(@item.IdProducto, @item.cantidadStock)"><strong>Agregar al carrito</strong></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -108,7 +108,7 @@
                                                                 <input type="number" id="cnt-@item.IdProducto" style="width: 4em;">
                                                             </div>
                                                             <div class="product-action-2">
-                                                                <a title="Add to cart" href="#"><strong>Agregar al carrito</strong></a>
+                                                                <a title="Add to cart" onclick="AgregarCarrito(@item.IdProducto, @item.cantidadStock)"><strong>Agregar al carrito</strong></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -139,3 +139,34 @@ else
         No hay productos disponibles en este momento
     </div>
 }
+<script>
+
+    function AgregarCarrito(IdProducto, Disponibles) {
+        let cantidadComprar = $("#cnt-" + IdProducto).val();
+
+        if (cantidadComprar > Disponibles) {
+
+            Swal.fire({
+                type: 'error',
+                title: 'Información',
+                text: 'La cantidad ingresada supera las unidades disponibles'
+            })
+
+        }
+        else {
+            $.ajax({
+                type: "POST",
+                url: "/Carrito/RegistrarCarrito",
+                dataType: "json",
+                data: {
+                    "IdProducto": IdProducto,
+                    "cantidadComprar": cantidadComprar
+                },
+                success: function (result) {
+                    window.location.href = '@Url.Action("Index", "Login")'
+                }
+            });
+        }
+    }
+
+</script>
