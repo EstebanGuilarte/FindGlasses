@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\6.png"
     },
     {
+      "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\payment-method.png",
+      "PackagePath": "staticwebassets\\images\\payment-method.png"
+    },
+    {
       "Id": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\js\\ConsultaNombreApi.js",
       "PackagePath": "staticwebassets\\js\\ConsultaNombreApi.js"
     },

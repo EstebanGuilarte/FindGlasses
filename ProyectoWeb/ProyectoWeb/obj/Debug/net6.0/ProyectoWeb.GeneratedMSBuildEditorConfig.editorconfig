@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\eagui\source\repos\FindGlasses\ProyectoWeb\ProyectoWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/eagui/source/repos/FindGlasses/ProyectoWeb/ProyectoWeb/Views/Carrito/ConsultarCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xDb25zdWx0YXJDYXJyaXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eagui/source/repos/FindGlasses/ProyectoWeb/ProyectoWeb/Views/Carrito/PagarCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xQYWdhckNhcnJpdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/eagui/source/repos/FindGlasses/ProyectoWeb/ProyectoWeb/Views/Login/CambiarClaveCuenta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2FtYmlhckNsYXZlQ3VlbnRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

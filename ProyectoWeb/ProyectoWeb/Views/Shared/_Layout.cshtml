@@ -58,26 +58,34 @@
                     </div>
                     <div class="col-lg-5 col-md-3 col-12">
                         <div class="right-bar">
-                            <div class="sinlge-bar shopping">
-                                <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">0</span></a>
-                                <div class="shopping-item">
-                                    <div class="dropdown-cart-header">
-                                        <span>0 Items</span>
-                                        <a href="#">Carrito de compras</a>
-                                    </div>
-                                    <ul class="shopping-list">
-                                        <li>
-                                        </li>
-                                    </ul>
-                                    <div class="bottom">
-                                        <div class="total">
-                                            <span>Total</span>
-                                            <span class="total-amount">$0.00</span>
+                            <!--Inicio Carrito de compras-->
+                            @if (Context.Session.GetString("NombreUsuario") != null)
+                            {
+                                <div class="sinlge-bar shopping">
+                                    <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">@Context.Session.GetString("Cantidad").ToString()</span></a>
+                                    <div class="shopping-item">
+                                        <div class="dropdown-cart-header">
+                                            @if (@Context.Session.GetString("Cantidad".ToString()) == "1")
+                                            {
+                                                <span>@Context.Session.GetString("Cantidad").ToString() Item</span>
+                                            }
+                                            else
+                                            {
+                                                <span>@Context.Session.GetString("Cantidad").ToString() Items</span>
+                                            }
+                                            <a href="#">Carrito de compras</a>
                                         </div>
-                                        <a href="checkout.html" class="btn animate">Pagar</a>
+                                        <div class="bottom">
+                                            <div class="total">
+                                                <span>Total</span>
+                                                <span class="total-amount">₡ @decimal.Parse(Context.Session.GetString("Total")).ToString("N2").ToString()</span>
+                                            </div>
+                                            <a href="checkout.html" class="btn animate">Pagar</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            }
+                            <!--Fin Carrito de compras-->
                             <div class="sinlge-bar">
                                 <ul>
                                     <li class="nav-item nav-profile dropdown">
@@ -240,7 +248,7 @@
     <script src="~/template/js/onepage-nav.min.js"></script>
     <script src="~/template/js/easing.js"></script>
     <script src="~/template/js/active.js"></script>
-    
+
     <script>
         $(document).ready(function () {
             $('#myTab a').on('click', function (e) {
@@ -256,7 +264,7 @@
 
             links.forEach(function (link) {
                 link.addEventListener('click', function (e) {
-                    e.preventDefault(); 
+                    e.preventDefault();
 
                     var targetId = link.getAttribute('href').substring(1);
                     var targetElement = document.getElementById(targetId);

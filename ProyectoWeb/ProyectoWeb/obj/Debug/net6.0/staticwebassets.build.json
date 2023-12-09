@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K2hcx+1Hj4KZ1jbRmRxFpdigFnyFDxKzWDfULpFxBSI=",
+  "Hash": "O27F7Ka9hJgxXOM9GJrDdkIhG87MF+7pc+KxzMNJ5Wc=",
   "Source": "ProyectoWeb",
   "BasePath": "_content/ProyectoWeb",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\6.png"
+    },
+    {
+      "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\images\\payment-method.png",
+      "SourceId": "ProyectoWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\",
+      "BasePath": "_content/ProyectoWeb",
+      "RelativePath": "images/payment-method.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\payment-method.png"
     },
     {
       "Identity": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\wwwroot\\js\\ConsultaNombreApi.js",

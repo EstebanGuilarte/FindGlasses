@@ -10,17 +10,13 @@ namespace WEBJN.Controllers
     {
         private readonly IUsuarioModel _usuarioModel;
         private readonly IProductosModel _productoModel;
-        /*
         private readonly ICarritoModel _carritoModel;
-        */
 
-        public LoginController(IUsuarioModel usuarioModel, IProductosModel productoModel /*, ICarritoModel carritoModel*/)
+        public LoginController(IUsuarioModel usuarioModel, IProductosModel productoModel, ICarritoModel carritoModel)
         {
             _usuarioModel = usuarioModel;
             _productoModel = productoModel;
-            /*
             _carritoModel = carritoModel;
-            */
         }
 
         [HttpGet]
@@ -55,11 +51,9 @@ namespace WEBJN.Controllers
                 HttpContext.Session.SetString("TokenUsuario", resp.Token);
                 HttpContext.Session.SetString("RolUsuario", resp.ConRol.ToString());
 
-                /*
                 var datos = _carritoModel.ConsultarCarrito();
                 HttpContext.Session.SetString("Total", datos.Sum(x => x.Total).ToString());
                 HttpContext.Session.SetString("Cantidad", datos.Sum(x => x.Cantidad).ToString());
-                */
 
                 return RedirectToAction("Index", "Login");
             }
