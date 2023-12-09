@@ -9,16 +9,16 @@ namespace WEBJN.Controllers
     public class LoginController : Controller
     {
         private readonly IUsuarioModel _usuarioModel;
-        /*
         private readonly IProductosModel _productoModel;
+        /*
         private readonly ICarritoModel _carritoModel;
         */
 
-        public LoginController(IUsuarioModel usuarioModel /*,IProductosModel productoModel, ICarritoModel carritoModel*/)
+        public LoginController(IUsuarioModel usuarioModel, IProductosModel productoModel /*, ICarritoModel carritoModel*/)
         {
             _usuarioModel = usuarioModel;
-            /*
             _productoModel = productoModel;
+            /*
             _carritoModel = carritoModel;
             */
         }
@@ -26,7 +26,8 @@ namespace WEBJN.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            var datos = _productoModel.ConsultarProductos().Where(x => x.cantidadStock > 0 && x.estado == true).ToList();
+            return View(datos);
         }
 
         [HttpGet]

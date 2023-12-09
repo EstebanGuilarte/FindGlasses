@@ -10,17 +10,19 @@ namespace ProyectoWeb.Controllers
     public class ProductosController : Controller
     {
         private readonly IProductosModel _productosModel;
-        private IHostEnvironment _hostingEnvironment;
+		/*private readonly ICarritoModel _carritoModel;*/
+		private IHostEnvironment _hostingEnvironment;
 
-        public ProductosController(IProductosModel productoModel, IHostEnvironment hostingEnvironment)
+        public ProductosController(IProductosModel productoModel, /*ICarritoModel carritoModel,*/ IHostEnvironment hostingEnvironment)
         {
             _productosModel = productoModel;
-            _hostingEnvironment = hostingEnvironment;
+			/*_carritoModel = carritoModel;*/
+			_hostingEnvironment = hostingEnvironment;
         }
 
         [HttpGet]
         [FiltroSeguridad]
-        public IActionResult ProductosLista()
+        public IActionResult ProductosLista() //Consultar productos
         {
             var productos = _productosModel.ConsultarProductos();
             return View(productos);

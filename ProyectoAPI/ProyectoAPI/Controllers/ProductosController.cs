@@ -15,7 +15,6 @@ namespace ProyectoAPI.Controllers
     [ApiController]
     public class ProductosController : ControllerBase
     {
-
         private readonly IConfiguration _configuration;
         private readonly IUtilitarios _utilitarios;
         private string _connection;
