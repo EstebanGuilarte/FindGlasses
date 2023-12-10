@@ -19,5 +19,8 @@ namespace ProyectoAPI.Entities
         public long ObtenerUsuario(IEnumerable<Claim> valores);
 
         public bool IsAdmin(IEnumerable<Claim> valores);
+
+
+        public string ArmarHTMLFactura(List<FacturasEnt> datosFactura);
     }
 }

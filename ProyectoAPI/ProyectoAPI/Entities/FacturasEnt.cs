@@ -12,5 +12,17 @@
         public decimal ImpuestoTotal { get; set; }
         public decimal Total { get; set; }
         public string Nombre { get; set; } = string.Empty;
-    }
+
+		public string NombreProducto { get; set; } = string.Empty;
+
+		public long IdFacturaDetalle { get; set; }
+
+
+		public long IdFacturaEncabezado { get; set; }
+
+		public long IdUsuario { get; set; }
+
+
+
+	}
 }

@@ -144,18 +144,18 @@ namespace ProyectoAPI.Controllers
         }
 
         [HttpGet]
-        [Authorize]
-        [Route("ConsultarDetalleFactura")]
-        public IActionResult ConsultarDetalleFactura(long q)
+        //[Authorize]
+        [Route("ConsultarUltimaFacturaYDetalles")]
+        public IActionResult ConsultarUltimaFacturaYDetalles(long q)
         {
             try
             {
-                long IdFactura = q;
+                long IdUsuario = q;
 
                 using (var context = new SqlConnection(_connection))
                 {
-                    var datos = context.Query<FacturasEnt>("ConsultarDetalleFactura",
-                        new { IdFactura },
+                    var datos = context.Query<FacturasEnt>("ConsultarUltimaFacturaYDetalles",
+                        new { IdUsuario },
                         commandType: CommandType.StoredProcedure).ToList();
 
                     return Ok(datos);
@@ -166,5 +166,44 @@ namespace ProyectoAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+
+        //METODO DE ENVIAR CORREO
+
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("EnviarFacturaPorCorreo")]
+        public IActionResult EnviarFacturaPorCorreo(List<FacturasEnt> datosFactura)
+        {
+            try
+            {
+                if (datosFactura != null && datosFactura.Any())
+                {
+                    string contenido = _utilitarios.ArmarHTMLFactura(datosFactura);
+                    string destinatarioCorreo = "correo@example.com"; // Reemplaza con el correo del destinatario
+
+                    // Aquí podrías agregar la lógica para enviar el correo electrónico con el contenido generado
+                    _utilitarios.EnviarCorreo(destinatarioCorreo, "Detalles de la Factura", contenido);
+
+                    return Ok(1); // Envío exitoso
+                }
+                else
+                {
+                    return BadRequest("No se proporcionaron datos de la factura."); // Datos de factura vacíos o nulos
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message); // Error en el envío del correo
+            }
+        }
+
+
+
+
+
+
+
     }
 }

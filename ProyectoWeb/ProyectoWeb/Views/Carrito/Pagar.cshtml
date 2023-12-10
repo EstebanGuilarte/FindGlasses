@@ -95,8 +95,17 @@
 									@using (Html.BeginForm("PagarCarrito", "Carrito", FormMethod.Post))
 									{
 
-										<div class="button">
+									@*	<div class="button">
 											<input type="submit" class="btn btn-primary" value="Pagar">
+										</div>*@
+
+										<div class="col-3">
+											@using (Html.BeginForm("PagarCarrito", "Carrito", FormMethod.Post))
+											{
+												<div class="button">
+													<input type="submit" class="btn btn-primary" value="Pagar">
+												</div>
+											}
 										</div>
 										
 									}

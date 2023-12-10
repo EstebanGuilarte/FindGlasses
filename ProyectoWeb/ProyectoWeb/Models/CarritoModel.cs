@@ -92,9 +92,9 @@ namespace ProyectoWeb.Models
                 return null;
         }
 
-        public List<FacturasEnt>? ConsultarDetalleFactura(long q)
+        public List<FacturasEnt>? ConsultarUltimaFacturaYDetalles(long q)
         {
-            string url = _urlApi + "api/Carrito/ConsultarDetalleFactura?q=" + q;
+            string url = _urlApi + "api/Carrito/ConsultarUltimaFacturaYDetalles?q=" + q;
             string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
 
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);

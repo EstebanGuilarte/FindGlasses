@@ -66,52 +66,138 @@ namespace ProyectoWeb.Controllers
 
 
 
+		//ESTO SIRVE PARA VER LA INFO DEL USUARIO EN EL PAGAR PERO QUIERO AGREGAR LA DEL CARRITO TAMBIEN
+		//[HttpGet]
+		//[FiltroSeguridad]
+		//public IActionResult Pagar()
+		//{
+
+		//	ViewBag.Provincias = _usuarioModel.ConsultarProvincias();
+		//	var datos = _usuarioModel.ConsultarUsuario(0);
+
+
+		//	var viewModel = new CombinacionEnt();
+
+
+
+		//	return View(datos);
+		//}
 
 
 
 
-        //ESTO SIRVE PARA VER LA INFO DEL USUARIO EN EL PAGAR PERO QUIERO AGREGAR LA DEL CARRITO TAMBIEN
-        //[HttpGet]
-        //[FiltroSeguridad]
-        //public IActionResult Pagar()
-        //{
+		//[HttpPost]
+		//[FiltroSeguridad]
+		//public IActionResult PagarCarrito()
+		//{
+		//    var respuesta = _carritoModel.PagarCarrito();
+		//    var datos = _carritoModel.ConsultarCarrito();
 
-        //	ViewBag.Provincias = _usuarioModel.ConsultarProvincias();
-        //	var datos = _usuarioModel.ConsultarUsuario(0);
+		//    HttpContext.Session.SetString("Total", datos.Sum(x => x.Total).ToString());
+		//    HttpContext.Session.SetString("Cantidad", datos.Sum(x => x.Cantidad).ToString());
+
+		//    if (respuesta.Contains("verifique"))
+		//    {
+		//        ViewBag.MensajePantalla = respuesta;
+		//        return View("ConsultarCarrito", datos);
+		//    }
+		//    else
+		//    {
+		//        return RedirectToAction("Factura", "Carrito");
+		//    }
+		//}
 
 
-        //	var viewModel = new CombinacionEnt();
+
+		[HttpPost]
+		[FiltroSeguridad]
+		public IActionResult PagarCarrito()
+		{
+			var respuesta = _carritoModel.PagarCarrito();
+			var datos = _carritoModel.ConsultarCarrito();
+
+			HttpContext.Session.SetString("Total", datos.Sum(x => x.Total).ToString());
+			HttpContext.Session.SetString("Cantidad", datos.Sum(x => x.Cantidad).ToString());
+
+			if (respuesta.Contains("verifique"))
+			{
+				ViewBag.MensajePantalla = respuesta;
+				return View("ConsultarCarrito", datos);
+			}
+			else
+			{
+				// Obtener IdUsuario almacenado en la sesión
+				if (HttpContext.Session.TryGetValue("IdUsuario", out byte[] idUsuarioBytes) && idUsuarioBytes != null)
+				{
+					string idUsuario = System.Text.Encoding.UTF8.GetString(idUsuarioBytes);
+
+					if (!string.IsNullOrEmpty(idUsuario) && long.TryParse(idUsuario, out long idUsuarioParsed))
+					{
+						return RedirectToAction("Factura", "Carrito", new { q = idUsuarioParsed });
+					}
+					else
+					{
+						return View("Error");
+					}
+				}
+				else
+				{
+					return View("Error");
+				}
+			}
+		}
 
 
 
-        //	return View(datos);
-        //}
+
+
+
+		[HttpGet]
+		[FiltroSeguridad]
+		public IActionResult Factura(long q)
+		{
+
+
+			var datos = _carritoModel.ConsultarUltimaFacturaYDetalles(q);
+			return View(datos);
+		}
 
 
 
 
-        [HttpPost]
-        [FiltroSeguridad]
-        public IActionResult PagarCarrito()
-        {
-            var respuesta = _carritoModel.PagarCarrito();
-            var datos = _carritoModel.ConsultarCarrito();
 
-            HttpContext.Session.SetString("Total", datos.Sum(x => x.Total).ToString());
-            HttpContext.Session.SetString("Cantidad", datos.Sum(x => x.Cantidad).ToString());
 
-            if (respuesta.Contains("verifique"))
-            {
-                ViewBag.MensajePantalla = respuesta;
-                return View("ConsultarCarrito", datos);
-            }
-            else
-            {
-                return RedirectToAction("Index", "Login");
-            }
-        }
+		//SIRVE PERFECTO
 
-        [HttpGet]
+		//[HttpPost]
+		//[FiltroSeguridad]
+		//public IActionResult PagarCarrito()
+		//{
+		//	var respuesta = _carritoModel.PagarCarrito();
+		//	var datos = _carritoModel.ConsultarCarrito();
+
+		//	HttpContext.Session.SetString("Total", datos.Sum(x => x.Total).ToString());
+		//	HttpContext.Session.SetString("Cantidad", datos.Sum(x => x.Cantidad).ToString());
+
+		//	if (respuesta.Contains("verifique"))
+		//	{
+		//		ViewBag.MensajePantalla = respuesta;
+		//		return View("ConsultarCarrito", datos);
+		//	}
+		//	else
+		//	{
+		//		return RedirectToAction("Index", "Login");
+		//	}
+		//}
+
+
+
+
+
+
+
+
+		[HttpGet]
         [FiltroSeguridad]
         public IActionResult EliminarProductoCarrito(long q)
         {
@@ -132,13 +218,13 @@ namespace ProyectoWeb.Controllers
             return View(datos);
         }
 
-        [HttpGet]
-        [FiltroSeguridad]
-        public IActionResult ConsultarDetalleFactura(long q)
-        {
-            var datos = _carritoModel.ConsultarDetalleFactura(q);
-            return View(datos);
-        }
+        //[HttpGet]
+        //[FiltroSeguridad]
+        //public IActionResult ConsultarDetalleFactura(long q)
+        //{
+        //    var datos = _carritoModel.ConsultarUltimaFacturaYDetalles(q);
+        //    return View(datos);
+        //}
     }
 }
 

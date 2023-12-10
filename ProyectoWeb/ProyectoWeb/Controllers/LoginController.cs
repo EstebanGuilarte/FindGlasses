@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using ProyectoWeb.Entities;
 using ProyectoWeb.Models;
 using System.Diagnostics;
@@ -48,7 +49,8 @@ namespace WEBJN.Controllers
             if (resp != null)
             {
                 HttpContext.Session.SetString("NombreUsuario", resp.nombre);
-                HttpContext.Session.SetString("TokenUsuario", resp.Token);
+				HttpContext.Session.SetString("IdUsuario", resp.IdUsuario.ToString());
+				HttpContext.Session.SetString("TokenUsuario", resp.Token);
                 HttpContext.Session.SetString("RolUsuario", resp.ConRol.ToString());
 
                 var datos = _carritoModel.ConsultarCarrito();

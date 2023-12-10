@@ -1,0 +1,86 @@
+﻿@model List<ProyectoWeb.Entities.FacturasEnt>
+
+@{
+    ViewData["Title"] = "Factura";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Lo mejor en lentes y anteojos -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <!-- Lista de objetivos -->
+                <!-- Agrega tu lista de objetivos aquí -->
+            </div>
+            <!--/ End Lista de objetivos -->
+            <!-- Shopping Cart -->
+            <div class="col-lg-9 col-md-8 col-12">
+                <div class="shopping-cart">
+                    <table class="table shopping-summery">
+                        <thead>
+                            <tr class="main-hading">
+                                <!-- Define los encabezados de la tabla -->
+                                <th>Id Factura Detalle</th>
+                                <th>Nombre Producto</th>
+                                <th class="text-center">Cantidad</th>
+                                <th class="text-center">Precio</th>
+                                <th class="text-center">Id Factura Encabezado</th>
+                                <th class="text-center">Id Usuario</th>
+                                <th class="text-center">Fecha de Pago</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Iterar a través de los elementos en Model -->
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <!-- Agregar los datos correspondientes a cada columna -->
+                                    <td>@item.IdFacturaDetalle</td>
+                                    <td>@item.NombreProducto</td>
+                                    <td>@item.Cantidad</td>
+                                    <td>@item.Precio</td>
+                                    <td>@item.IdFacturaEncabezado</td>
+                                    <td>@item.IdUsuario</td>
+                                    <td>@item.FechaPago</td>
+                                    <td>
+                                        <!-- Input Order -->
+                                        <!-- ... -->
+                                        <!--/ End Input Order -->
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    <!-- Total Amount -->
+                    <div class="total-amount">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-5 col-12">
+                                <div class="left">
+                                    <!-- Contenido de la parte izquierda -->
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-7 col-12">
+                                <div class="right">
+                                    <ul>
+                                        <!-- Mostrar impuestos y total -->
+                                        <li>Impuestos: @Model.Sum(x => x.Impuesto)</li>
+                                        <li class="last">You Pay: @Model.Sum(x => x.TotalPago)</li>
+                                    </ul>
+                                    <div class="button5">
+                                    <a href="@Url.Action("Index", "Login")" class="btn">Vuelve al Inicio</a>
+
+                                        <a href="#" class="btn">Pide los datos de tu Factura por Correo Electronico</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ End Total Amount -->
+                </div>
+            </div>
+            <!--/ End Shopping Cart -->
+        </div>
+    </div>
+</div>
+<!--/ End Lo mejor en lentes y anteojos -->
