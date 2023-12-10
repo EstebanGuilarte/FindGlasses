@@ -70,15 +70,41 @@ namespace WEBJN.Controllers
             return View();
         }
 
+        //[HttpPost]
+        //public IActionResult RegistrarCuenta(UsuarioEnt entidad)
+        //{
+        //    var resp = _usuarioModel.RegistrarCuenta(entidad);
+
+        //    if (resp == 1)
+        //        return RedirectToAction("IniciarSesion", "Login");
+        //    else
+        //    {
+        //        ViewBag.MensajePantalla = "No se pudo registrar su cuenta";
+        //        return View();
+        //    }
+        //}
+
+
+
         [HttpPost]
         public IActionResult RegistrarCuenta(UsuarioEnt entidad)
         {
             var resp = _usuarioModel.RegistrarCuenta(entidad);
 
             if (resp == 1)
+            {
+                // Redirige al inicio de sesión si el registro fue exitoso
                 return RedirectToAction("IniciarSesion", "Login");
+            }
+            else if (resp == 2)
+            {
+                // Muestra un mensaje si el correo ya existe
+                ViewBag.MensajePantalla = "El correo electrónico ya está registrado";
+                return View();
+            }
             else
             {
+                // Otros errores
                 ViewBag.MensajePantalla = "No se pudo registrar su cuenta";
                 return View();
             }

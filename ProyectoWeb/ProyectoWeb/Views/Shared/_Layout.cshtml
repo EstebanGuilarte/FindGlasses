@@ -64,13 +64,13 @@
                                 <div class="sinlge-bar shopping">
                                     <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">@Context.Session.GetString("Cantidad").ToString()</span></a>
                                     <div class="shopping-item">
-                                        <div class="dropdown-cart-header">
-                                            @if (@Context.Session.GetString("Cantidad".ToString()) == "1")
+                                        <div class="dropdown-cart-header"> @if (@Context.Session.GetString("Cantidad".ToString()) == "1")
                                             {
                                                 <span>@Context.Session.GetString("Cantidad").ToString() Item</span>
                                             }
                                             else
                                             {
+                                           
                                                 <span>@Context.Session.GetString("Cantidad").ToString() Items</span>
                                             }
                                             <a href="#">Carrito de compras</a>
@@ -80,7 +80,7 @@
                                                 <span>Total</span>
                                                 <span class="total-amount">₡ @decimal.Parse(Context.Session.GetString("Total")).ToString("N2").ToString()</span>
                                             </div>
-                                            <a href="checkout.html" class="btn animate">Pagar</a>
+                                            <a href="@Url.Action("Pagar","Carrito")">Pagar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,14 +144,22 @@
                 </div>
             </div>
         </div>
+
+
+
+
+      
+
+        <!-- Tu código HTML -->
         <div class="header-inner">
             <div class="container">
                 <div class="cat-nav-head">
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="all-category">
-                                <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>Categorías</h3>
-                                <ul class="main-category">
+                                <!-- Agrega un identificador único para el menú desplegable -->
+                                <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true" id="toggleCategories"></i>Categorías</h3>
+                                <ul class="main-category" id="categoriesDropdown" style="display: none;">
                                     <li><a href="#seccionProductos">Lentes de sol</a></li>
                                     <li><a href="#seccionProductos">Anteojos</a></li>
                                     <li><a href="#seccionProductos">Accesorios</a></li>
@@ -162,6 +170,11 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
     </header>
 
     <section class="hero-slider">
@@ -249,26 +262,27 @@
     <script src="~/template/js/easing.js"></script>
     <script src="~/template/js/active.js"></script>
 
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         $(document).ready(function () {
+            // Evento para cambiar entre pestañas del tab
             $('#myTab a').on('click', function (e) {
                 e.preventDefault();
                 $(this).tab('show');
             });
-        });
-    </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
+            // Evento para hacer scroll suave a los elementos con anclas
             var links = document.querySelectorAll('a[href^="#"]');
-
             links.forEach(function (link) {
                 link.addEventListener('click', function (e) {
                     e.preventDefault();
-
                     var targetId = link.getAttribute('href').substring(1);
                     var targetElement = document.getElementById(targetId);
-
                     if (targetElement) {
                         targetElement.scrollIntoView({
                             behavior: 'smooth',
@@ -276,6 +290,11 @@
                         });
                     }
                 });
+            });
+
+            // Evento para mostrar u ocultar el menú desplegable
+            $('#toggleCategories').on('click', function () {
+                $('#categoriesDropdown').slideToggle();
             });
         });
     </script>

@@ -96,7 +96,7 @@ namespace ProyectoAPI.Controllers
         }
 
         [HttpDelete]
-        [Authorize]
+        //[Authorize]
         [Route("EliminarProductoCarrito")]
         public IActionResult EliminarProductoCarrito(long q)
         {
@@ -106,7 +106,7 @@ namespace ProyectoAPI.Controllers
 
                 using (var context = new SqlConnection(_connection))
                 {
-                    var datos = context.Execute("EliminarProductoCarrito",
+                    var datos = context.Execute("ReducirCantidadProductoCarrito",
                         new { IdCarrito },
                         commandType: CommandType.StoredProcedure);
 

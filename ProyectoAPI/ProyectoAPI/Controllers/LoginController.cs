@@ -56,6 +56,29 @@ namespace APIJN.Controllers
             }
         }
 
+        //[HttpPost]
+        //[AllowAnonymous]
+        //[Route("RegistrarCuenta")]
+        //public IActionResult RegistrarCuenta(UsuarioEnt entidad)
+        //{
+        //    try
+        //    {
+        //        using (var context = new SqlConnection(_connection))
+        //        {
+        //            var datos = context.Execute("RegistrarCuenta",
+        //                new { entidad.identificacion, entidad.nombre, entidad.usuario, entidad.correo, entidad.contrasenna },
+        //                commandType: CommandType.StoredProcedure);
+
+        //            return Ok(datos);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(ex.Message);
+        //    }
+        //}
+
+
         [HttpPost]
         [AllowAnonymous]
         [Route("RegistrarCuenta")]
@@ -65,11 +88,19 @@ namespace APIJN.Controllers
             {
                 using (var context = new SqlConnection(_connection))
                 {
-                    var datos = context.Execute("RegistrarCuenta",
-                        new { entidad.identificacion, entidad.nombre, entidad.usuario, entidad.correo, entidad.contrasenna },
-                        commandType: CommandType.StoredProcedure);
+                    var parameters = new DynamicParameters();
+                    parameters.Add("@identificacion", entidad.identificacion);
+                    parameters.Add("@nombre", entidad.nombre);
+                    parameters.Add("@usuario", entidad.usuario);
+                    parameters.Add("@correo", entidad.correo);
+                    parameters.Add("@contrasenna", entidad.contrasenna);
+                    parameters.Add("@resultado", dbType: DbType.Int32, direction: ParameterDirection.ReturnValue);
 
-                    return Ok(datos);
+                    context.Execute("RegistrarCuenta", parameters, commandType: CommandType.StoredProcedure);
+
+                    int resultado = parameters.Get<int>("@resultado");
+
+                    return new ObjectResult(resultado); // Retorna directamente el número obtenido
                 }
             }
             catch (Exception ex)
@@ -77,6 +108,10 @@ namespace APIJN.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+
+
 
         [HttpPost]
         [AllowAnonymous]

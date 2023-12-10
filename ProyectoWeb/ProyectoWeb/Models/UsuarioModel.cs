@@ -32,19 +32,64 @@ namespace ProyectoWeb.Models
                 return null;
         }
 
+        //public int RegistrarCuenta(UsuarioEnt entidad)
+        //{
+        //    string url = _urlApi + "api/Login/RegistrarCuenta";
+        //    JsonContent obj = JsonContent.Create(entidad);
+        //    var resp = _httpClient.PostAsync(url, obj).Result;
+
+        //    if (resp.IsSuccessStatusCode)
+        //        return resp.Content.ReadFromJsonAsync<int>().Result;
+        //    else
+        //        return 0;
+        //}
+
         public int RegistrarCuenta(UsuarioEnt entidad)
         {
             string url = _urlApi + "api/Login/RegistrarCuenta";
             JsonContent obj = JsonContent.Create(entidad);
-            var resp = _httpClient.PostAsync(url, obj).Result;
 
-            if (resp.IsSuccessStatusCode)
-                return resp.Content.ReadFromJsonAsync<int>().Result;
-            else
+            try
+            {
+                var resp = _httpClient.PostAsync(url, obj).Result;
+
+                if (resp.IsSuccessStatusCode)
+                {
+                    int codigoRespuesta = resp.Content.ReadFromJsonAsync<int>().Result;
+
+                    if (codigoRespuesta == 1)
+                    {
+                        // Mantenemos el retorno definido en el método
+                        return 1;
+                    }
+                    else if (codigoRespuesta == 2)
+                    {
+                        // Mantenemos el retorno definido en el método
+                        return 2;
+                    }
+                    // Mantenemos el retorno definido en el método
+                    return 3;
+                }
+                else
+                {
+                    // Mantenemos el retorno definido en el método
+                    return 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Mantenemos el retorno definido en el método
+                Console.WriteLine("Error: " + ex.Message);
                 return 0;
+            }
         }
 
-        public int RecuperarCuenta(UsuarioEnt entidad)
+    
+
+
+
+
+    public int RecuperarCuenta(UsuarioEnt entidad)
         {
             string url = _urlApi + "api/Login/RecuperarCuenta";
             JsonContent obj = JsonContent.Create(entidad);
