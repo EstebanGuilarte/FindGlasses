@@ -30,8 +30,7 @@ namespace ProyectoAPI.Entities
             return htmlArchivo;
         }
 
-
-
+         
         public string ArmarHTMLFactura(List<FacturasEnt> datosFactura)
         {
             string rutaArchivo = Path.Combine(_hostingEnvironment.ContentRootPath, "CorreosTemplate\\ArmarHTMLFactura.html");
