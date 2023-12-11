@@ -1,34 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\Proyecto Ultima Semana\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj": {}
+    "C:\\Universidad\\Cuatri 7\\New folder\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj": {}
   },
   "projects": {
-    "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\Proyecto Ultima Semana\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj": {
+    "C:\\Universidad\\Cuatri 7\\New folder\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\Proyecto Ultima Semana\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj",
+        "projectUniqueName": "C:\\Universidad\\Cuatri 7\\New folder\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj",
         "projectName": "ProyectoWeb",
-        "projectPath": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\Proyecto Ultima Semana\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj",
-        "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-        "outputPath": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\Proyecto Ultima Semana\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\obj\\",
+        "projectPath": "C:\\Universidad\\Cuatri 7\\New folder\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\ProyectoWeb.csproj",
+        "packagesPath": "C:\\Users\\abrah\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Cuatri 7\\New folder\\FindGlasses\\ProyectoWeb\\ProyectoWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\abrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

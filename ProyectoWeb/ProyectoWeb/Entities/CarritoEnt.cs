@@ -11,6 +11,7 @@
         public decimal SubTotal { get; set; }
         public decimal Impuesto { get; set; }
         public decimal Total { get; set; }
+        public string NombreProducto { get; set; } = string.Empty;
         public string Nombre { get; set; } = string.Empty;
     }
 }
