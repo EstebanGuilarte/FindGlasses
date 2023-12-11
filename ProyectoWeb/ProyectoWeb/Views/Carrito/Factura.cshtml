@@ -5,65 +5,74 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    .custom-btn {
+        color: #fff !important;
+    }
+</style>
+
 <div class="section">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-md-8 col-12">
+                <!-- Encabezado Factura -->
+                <div class="factura-header">
+                    <h2>Factura No. @Model.FirstOrDefault()?.IdFacturaEncabezado</h2>
+                </div>
+
                 <!-- Shopping Cart -->
                 <div class="shopping-cart">
                     <table class="table shopping-summery">
                         <thead>
                             <tr class="main-hading">
-                                <th>Id Factura Detalle</th>
-                                <th class="text-center">Id Factura Encabezado</th>
-                                <th class="text-center">Id Usuario</th>
-                                <th>Nombre Producto</th>
+                                <th class="text-center">Nombre Producto</th>
                                 <th class="text-center">Cantidad</th>
-                                <th class="text-center">Precio</th>
-                                <th class="text-center">Fecha de Pago</th>
+                                <th class="text-center">Precio Unitario</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (var item in Model)
                             {
                                 <tr>
-                                    <td>@item.IdFacturaDetalle</td>
-                                    <td class="text-center">@item.IdFacturaEncabezado</td>
-                                    <td class="text-center">@item.IdUsuario</td>
-                                    <td>@item.NombreProducto</td>
+                                    <td class="text-center">@item.NombreProducto</td>
                                     <td class="text-center">@item.Cantidad</td>
                                     <td class="text-center">@item.Precio</td>
-                                    <td class="text-center">@item.FechaPago</td>
                                 </tr>
                             }
                         </tbody>
                     </table>
+                </div>
 
-                    <!-- Total Amount -->
-                    <div class="total-amount">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-5 col-12">
-                                <div class="left">
-                                    <!-- Contenido de la parte izquierda -->
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-7 col-12">
-                                <div class="right">
-                                    <ul>
-                                        <li>Impuestos: @Model.Sum(x => x.Impuesto)</li>
-                                        <li class="last">Total a Pagar: @Model.Sum(x => x.TotalPago)</li>
-                                    </ul>
-                                    <div class="button5">
-                                        <a href="@Url.Action("Index", "Login")" class="btn">Volver al Inicio</a>
-                                        <a href="#" class="btn">Enviar al Correo</a>
-                                    </div>
-                                </div>
+                <!-- Impuestos y Total a Pagar -->
+                <div class="total-amount">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="left">
+                                <!-- Contenido de la parte izquierda -->
+                                <ul>
+                                    <li>Impuestos: @Model.Sum(x => x.Impuesto)</li>
+                                    <li class="last">Total a Pagar: @Model.Sum(x => x.TotalPago)</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <!--/ End Total Amount -->
                 </div>
-                <!--/ End Shopping Cart -->
+                <!--/ End Impuestos y Total a Pagar -->
+
+                <!-- Nombre Cliente y Fecha de Pago -->
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <p><strong>Nombre Cliente: </strong>@Model.FirstOrDefault()?.IdUsuario</p>
+                        <p><strong>Fecha de Pago: </strong>@Model.FirstOrDefault()?.FechaPago</p>
+                    </div>
+                </div>
+                <!--/ End Nombre Cliente y Fecha de Pago -->
+
+                <!-- Botones Volver al Inicio y Enviar al Correo -->
+                <div class="button5">
+                    <a href="@Url.Action("Index", "Login")" class="btn btn-primary custom-btn">Volver al Inicio</a>
+                    <a href="@Url.Action("Index", "Login")" class="btn btn-secondary custom-btn">Enviar al Correo</a>
+                </div>
             </div>
         </div>
     </div>
