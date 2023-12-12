@@ -23,6 +23,10 @@
 		public long IdUsuario { get; set; }
 
 
+        //PARA EL ENVIO DE CORREO
+        public string correo { get; set; } = string.Empty;
 
-	}
+
+
+    }
 }

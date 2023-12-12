@@ -15,5 +15,8 @@ namespace ProyectoWeb.Models
         public List<FacturasEnt>? ConsultarFacturas();
 
         public List<FacturasEnt>? ConsultarUltimaFacturaYDetalles(long q);
+
+
+        public string EnviarCorreoFactura(long idUsuario);
     }
 }

@@ -159,7 +159,16 @@ namespace ProyectoWeb.Controllers
 
 
 			var datos = _carritoModel.ConsultarUltimaFacturaYDetalles(q);
-			return View(datos);
+
+
+            // Obtener el IdUsuario desde la sesión
+            var idUsuario = HttpContext.Session.GetString("IdUsuario");
+
+            // Asignar el valor a ViewBag para accederlo en la vista
+            ViewBag.IdUsuario = idUsuario;
+
+
+            return View(datos);
 		}
 
 
@@ -210,13 +219,38 @@ namespace ProyectoWeb.Controllers
             return RedirectToAction("Pagar", "Carrito");
         }
 
+
+
+        //METODO QUE FUNCIONA ANTES DE TOCARLO 
+
+        //[HttpGet]
+        //[FiltroSeguridad]
+        //public IActionResult ConsultarFacturas()
+        //{
+        //    var datos = _carritoModel.ConsultarFacturas();
+        //    return View(datos);
+        //}
+
+
+
         [HttpGet]
         [FiltroSeguridad]
         public IActionResult ConsultarFacturas()
         {
             var datos = _carritoModel.ConsultarFacturas();
+
+            // Obtener el IdUsuario desde la sesión
+            var idUsuario = HttpContext.Session.GetString("IdUsuario");
+
+            // Asignar el valor a ViewBag para accederlo en la vista
+            ViewBag.IdUsuario = idUsuario;
+
             return View(datos);
         }
+
+
+
+
 
         //[HttpGet]
         //[FiltroSeguridad]
@@ -225,8 +259,76 @@ namespace ProyectoWeb.Controllers
         //    var datos = _carritoModel.ConsultarUltimaFacturaYDetalles(q);
         //    return View(datos);
         //}
+
+
+        //METODO DE ENVIAR CORREO
+
+
+
+
+        [HttpPost]
+        [FiltroSeguridad]
+        public IActionResult EnviarCorreoFactura(long IdUsuario )
+        {
+            var idUsuario = HttpContext.Session.GetString("IdUsuario");
+
+            if (string.IsNullOrEmpty(idUsuario))
+            {
+                // Manejo de error si el IdUsuario no está en la sesión
+                return BadRequest("Id de usuario no encontrado en la sesión");
+            }
+
+            try
+            {
+                // Llama al método del modelo para enviar el correo de la factura
+                var respuesta = _carritoModel.EnviarCorreoFactura(long.Parse(idUsuario));
+
+                // Devuelve una respuesta de éxito
+                return Ok("Correo enviado correctamente");
+            }
+            catch (Exception ex)
+            {
+                // Manejo del error si ocurre alguna excepción
+                return BadRequest("Error al enviar el correo electrónico: " + ex.Message);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        //[HttpPost]
+        //[FiltroSeguridad]
+        //public IActionResult EnviarCorreoFactura(long idUsuario)
+        //{
+
+        //    HttpContext.Session.SetString("IdUsuario", resp.IdUsuario.ToString());
+
+        //    try
+        //    {
+        //        // Llama al método del modelo para enviar el correo de la factura
+        //        var respuesta = _carritoModel.EnviarCorreoFactura(idUsuario);
+
+        //        // Aquí podrías devolver algo más específico en la respuesta según la lógica de tu aplicación
+        //        return Ok("Correo enviado correctamente");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest("Error al enviar el correo electrónico: " + ex.Message);
+        //    }
+        //}
     }
+
+
 }
+
 
 
 

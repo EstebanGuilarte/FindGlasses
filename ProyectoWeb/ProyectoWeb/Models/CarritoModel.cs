@@ -1,4 +1,6 @@
 ﻿using System.Net.Http.Headers;
+using System.Security.Policy;
+using System.Text;
 using ProyectoWeb.Entities;
 
 namespace ProyectoWeb.Models
@@ -105,7 +107,76 @@ namespace ProyectoWeb.Models
             else
                 return null;
         }
-               
+
+
+        //METODO DE ENVIAR CORREO
+
+
+
+
+
+
+        //EN MI OPINION ESTA BIEN SOLO QUE NO LLEGA AL API
+
+
+
+        public string EnviarCorreoFactura(long idUsuario)
+        {
+            string url = _urlApi + "api/Carrito/EnviarCorreoFactura?idUsuario=" + idUsuario;
+            string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            // Puedes enviar un objeto vacío si la solicitud no requiere un cuerpo específico
+            JsonContent obj = JsonContent.Create(idUsuario);
+            var resp = _httpClient.PostAsync(url, obj).Result;
+
+            if (resp.IsSuccessStatusCode)
+            {
+                // Si la solicitud es exitosa, devuelve el contenido de la respuesta como string
+                return resp.Content.ReadAsStringAsync().Result;
+            }
+            else
+            {
+                // Si ocurre algún error, devuelve un string vacío o maneja el error según tu lógica
+                return string.Empty;
+            }
+        }
+
+
+
+        //JsonContent obj = JsonContent.Create(entidad);
+        //var resp = _httpClient.PostAsync(url, obj).Result;
+
+
+
+
+        //public string EnviarCorreoFactura(long idUsuario)
+        //{
+        //    string url = _urlApi + "api/Carrito/EnviarCorreoFactura?idUsuario=" + idUsuario;
+        //    string token = _HttpContextAccessor.HttpContext.Session.GetString("TokenUsuario");
+
+        //    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+        //    // Puedes enviar un objeto vacío si la solicitud no requiere un cuerpo específico
+        //    var content = new StringContent("", Encoding.UTF8, "application/json");
+        //    var resp = _httpClient.PostAsync(url, content).Result;
+
+        //    if (resp.IsSuccessStatusCode)
+        //    {
+        //        // Si la solicitud es exitosa, devuelve el contenido de la respuesta como string
+        //        return resp.Content.ReadAsStringAsync().Result;
+        //    }
+        //    else
+        //    {
+        //        // Si ocurre algún error, devuelve un string vacío o maneja el error según tu lógica
+        //        return string.Empty;
+        //    }
+        //}
+
 
     }
+
+
 }
+

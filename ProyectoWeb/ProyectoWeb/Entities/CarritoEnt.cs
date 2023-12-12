@@ -12,5 +12,7 @@
         public decimal Impuesto { get; set; }
         public decimal Total { get; set; }
         public string Nombre { get; set; } = string.Empty;
+
+        public string NombreProducto { get; set; } 
     }
 }

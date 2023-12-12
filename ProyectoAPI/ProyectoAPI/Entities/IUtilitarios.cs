@@ -20,7 +20,7 @@ namespace ProyectoAPI.Entities
 
         public bool IsAdmin(IEnumerable<Claim> valores);
 
-
         public string ArmarHTMLFactura(List<FacturasEnt> datosFactura);
+
     }
 }

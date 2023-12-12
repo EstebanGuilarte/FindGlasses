@@ -30,7 +30,7 @@ namespace ProyectoAPI.Entities
             return htmlArchivo;
         }
 
-         
+        // METODO DE FACTURACION
         public string ArmarHTMLFactura(List<FacturasEnt> datosFactura)
         {
             string rutaArchivo = Path.Combine(_hostingEnvironment.ContentRootPath, "CorreosTemplate\\ArmarHTMLFactura.html");
@@ -45,6 +45,7 @@ namespace ProyectoAPI.Entities
                 datosFacturaHTML.Append($"<td>{factura.NombreProducto}</td>");
                 datosFacturaHTML.Append($"<td>{factura.Cantidad}</td>");
                 datosFacturaHTML.Append($"<td>{factura.Impuesto}</td>");
+                datosFacturaHTML.Append($"<td>{factura.Precio}</td>");
                 datosFacturaHTML.Append($"<td>{factura.IdFacturaEncabezado}</td>");
                 datosFacturaHTML.Append($"<td>{factura.IdUsuario}</td>");
                 datosFacturaHTML.Append($"<td>{factura.FechaPago}</td>");

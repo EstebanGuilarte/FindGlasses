@@ -169,39 +169,233 @@ namespace ProyectoAPI.Controllers
 
 
 
-        //METODO DE ENVIAR CORREO
+        //METODO DE ENVIAR CORREO FUNCIONAL
 
         [HttpPost]
-        [AllowAnonymous]
-        [Route("EnviarFacturaPorCorreo")]
-        public IActionResult EnviarFacturaPorCorreo(List<FacturasEnt> datosFactura)
+        [Route("EnviarCorreoFactura")]
+        public IActionResult EnviarCorreoFactura([FromBody] long idUsuario)
         {
             try
             {
-                if (datosFactura != null && datosFactura.Any())
+                using (SqlConnection connection = new SqlConnection(_connection))
                 {
-                    string contenido = _utilitarios.ArmarHTMLFactura(datosFactura);
-                    string destinatarioCorreo = "correo@example.com"; // Reemplaza con el correo del destinatario
+                    connection.Open();
 
-                    // Aquí podrías agregar la lógica para enviar el correo electrónico con el contenido generado
-                    _utilitarios.EnviarCorreo(destinatarioCorreo, "Detalles de la Factura", contenido);
+                    // Consultar el correo del usuario
+                    var correoUsuario = connection.QueryFirstOrDefault<string>("ConsultarCorreoUsuario", new { IdUsuario = idUsuario }, commandType: CommandType.StoredProcedure);
 
-                    return Ok(1); // Envío exitoso
-                }
-                else
-                {
-                    return BadRequest("No se proporcionaron datos de la factura."); // Datos de factura vacíos o nulos
+                    // Verificar que se encontró el correo
+                    if (!string.IsNullOrEmpty(correoUsuario))
+                    {
+                        // Obtener detalles de factura utilizando el procedimiento almacenado CORREOFACTURA
+                        var datos = connection.Query<FacturasEnt>("CORREOFACTURA",
+                            new { idUsuario },
+                            commandType: CommandType.StoredProcedure).ToList();
+
+                        // Verificar que se encontraron datos de factura
+                        if (datos != null && datos.Any())
+                        {
+                            // Aquí obtienes los datos para armar el HTML del correo
+                            string contenidoCorreo = _utilitarios.ArmarHTMLFactura(datos);
+
+                            // Utilizar el correo obtenido para enviar el mensaje
+                            _utilitarios.EnviarCorreo(correoUsuario, "Detalles de la factura", contenidoCorreo);
+
+                            return Ok("Correo enviado correctamente");
+                        }
+                        else
+                        {
+                            return BadRequest("No se encontraron detalles de factura para el usuario");
+                        }
+                    }
+                    else
+                    {
+                        return BadRequest("No se encontró el correo del usuario");
+                    }
                 }
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message); // Error en el envío del correo
+                return BadRequest("Error al enviar el correo electrónico: " + ex.Message);
             }
         }
 
 
 
 
+
+
+        //MEJOR VERSION DE MOMENTO
+
+        //[HttpPost]
+        //[Route("EnviarCorreoFactura")]
+        //public IActionResult EnviarCorreoFactura([FromBody] long idUsuario)
+        //{
+        //    try
+        //    {
+        //        using (SqlConnection connection = new SqlConnection(_connection))
+        //        {
+        //            connection.Open();
+
+        //            using (var context = new SqlConnection(_connection))
+        //            {
+        //                var datos = context.Query<FacturasEnt>("CORREOFACTURA",
+        //                    new { idUsuario },
+        //                    commandType: CommandType.StoredProcedure).ToList();
+
+
+        //                // Obtener datos de factura utilizando Dapper
+        //                //var facturaDetalles = connection.Query<FacturasEnt>("SELECT * FROM FacturaDetalleTemp WHERE IdUsuario = @IdUsuario", new { IdUsuario = idUsuario });
+
+        //                // Verificar que facturaDetalles tenga datos
+        //                if (datos != null && datos.Any())
+        //                {
+        //                    // Aquí s los datos obtenidos para armar el HTML del correo
+        //                    string contenidoCorreo = _utilitarios.ArmarHTMLFactura((List<FacturasEnt>)datos);
+
+
+
+
+        //                    _utilitarios.EnviarCorreo(datos.correo, "Detalles de la factura", contenidoCorreo);
+
+        //                    return Ok("Correo enviado correctamente");
+        //                }
+        //                else
+        //                {
+        //                    return BadRequest("No se encontraron detalles de factura para el usuario");
+        //                }
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest("Error al enviar el correo electrónico: " + ex.Message);
+        //    }
+        //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //PROBLEMA CON ESTE ES QUE AL ENVIAR UNA LISTA Y TENER QUE BUSCAR EL CORREO EN EL PRODIMIENTO TENGO QUE PASAR POR TODA LA LISTA (SE CAE EN EL ENVIAR POR EL CORREO)
+
+
+        //[HttpPost]
+        //[Route("EnviarCorreoFactura")]
+        //public IActionResult EnviarCorreoFactura([FromBody] long idUsuario)
+        //{
+        //    try
+        //    {
+        //        using (SqlConnection connection = new SqlConnection(_connection))
+        //        {
+        //            connection.Open();
+
+        //            using (var context = new SqlConnection(_connection))
+        //            {
+        //                var datos = context.Query<FacturasEnt>("CORREOFACTURA",
+        //                    new { idUsuario },
+        //                    commandType: CommandType.StoredProcedure).ToList();
+
+
+        //                // Obtener datos de factura utilizando Dapper
+        //                //var facturaDetalles = connection.Query<FacturasEnt>("SELECT * FROM FacturaDetalleTemp WHERE IdUsuario = @IdUsuario", new { IdUsuario = idUsuario });
+
+        //                // Verificar que facturaDetalles tenga datos
+        //                if (datos != null && datos.Any())
+        //                {
+        //                    // Aquí s los datos obtenidos para armar el HTML del correo
+        //                    string contenidoCorreo = _utilitarios.ArmarHTMLFactura((List<FacturasEnt>)datos);
+
+
+
+
+        //                    _utilitarios.EnviarCorreo(datos.correo, "Detalles de la factura", contenidoCorreo);
+
+        //                    return Ok("Correo enviado correctamente");
+        //                }
+        //                else
+        //                {
+        //                    return BadRequest("No se encontraron detalles de factura para el usuario");
+        //                }
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest("Error al enviar el correo electrónico: " + ex.Message);
+        //    }
+        //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //[HttpPost]
+        //[Route("EnviarCorreoFactura")]
+        //public IActionResult EnviarCorreoFactura([FromBody] long idUsuario)
+        //{
+        //    try
+        //    {
+        //        using (SqlConnection connection = new SqlConnection(_connection))
+        //        {
+        //            connection.Open();
+
+
+        //            SqlCommand command = new SqlCommand("CORREOFACTURA", connection);
+        //            command.CommandType = CommandType.StoredProcedure;
+        //            command.Parameters.AddWithValue("@IdUsuario", idUsuario);
+        //            command.ExecuteNonQuery();
+
+        //            // Obtener datos de factura utilizando Dapper
+        //            var facturaDetalles = connection.Query<FacturasEnt>("SELECT * FROM FacturaDetalleTemp WHERE IdUsuario = @IdUsuario", new { IdUsuario = idUsuario });
+
+        //            // Verificar que facturaDetalles tenga datos
+        //            if (facturaDetalles != null && facturaDetalles.Any())
+        //            {
+        //                // Aquí s los datos obtenidos para armar el HTML del correo
+        //                string contenidoCorreo = _utilitarios.ArmarHTMLFactura((List<FacturasEnt>)facturaDetalles);
+
+
+        //                // _utilitarios.EnviarCorreo(correoDestino, "Detalles de la factura", contenidoCorreo);
+
+        //                return Ok("Correo enviado correctamente");
+        //            }
+        //            else
+        //            {
+        //                return BadRequest("No se encontraron detalles de factura para el usuario");
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest("Error al enviar el correo electrónico: " + ex.Message);
+        //    }
+        //}
 
 
 
