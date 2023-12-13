@@ -1554,35 +1554,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\XPC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\eagui\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\Proyecto Ultima Semana\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\ProyectoAPI.csproj",
+      "projectUniqueName": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\ProyectoAPI.csproj",
       "projectName": "ProyectoAPI",
-      "projectPath": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\Proyecto Ultima Semana\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\ProyectoAPI.csproj",
-      "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-      "outputPath": "L:\\Tercer cuatri 2023\\Progra Avanzada\\ProyectoEnGrupó\\Proyecto Ultima Semana\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\obj\\",
+      "projectPath": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\ProyectoAPI.csproj",
+      "packagesPath": "C:\\Users\\eagui\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eagui\\source\\repos\\FindGlasses\\ProyectoAPI\\ProyectoAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\eagui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1641,7 +1632,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -159,5 +159,14 @@ namespace WEBJN.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpGet]
+        public IActionResult EnviarMensaje()
+        {
+            string phoneNumber = "88288828"; //Aquí se agregar el número
+            string whatsappLink = $"https://wa.me/506{phoneNumber}";
+
+            return Redirect(whatsappLink);
+        }
     }
 }

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="~/template/css/reset.css">
     <link rel="stylesheet" href="~/template/style.css">
     <link rel="stylesheet" href="~/template/css/responsive.css">
-
+    <link rel="stylesheet" href="~/template/css/whatsapp.css"/>
 </head>
 <body class="js">
     <header class="header shop">
@@ -206,6 +206,12 @@
     </section>
 
     @RenderBody()
+
+    <div id="whatsapp-logo">
+        <a class="dropdown-item" href="@Url.Action("EnviarMensaje", "Login")">
+            <img src="~/images/whatsapp.png" alt="WhatsApp Logo" />
+        </a>
+    </div>
 
     <footer class="footer">
         <div class="footer-top section">
