@@ -11,6 +11,7 @@ namespace ProyectoWeb.Models
         public int ActualizarProducto2(ProductosEnt entidad);
         public List<SelectListItem>? ConsultarTipoProducto();
         public int ActualizarEstadoProducto(ProductosEnt entidad);
+        public List<ProductosEnt> BuscarProductos(string nombreProducto);
 
     }
 }

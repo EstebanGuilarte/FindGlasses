@@ -926,8 +926,6 @@ C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\
 C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout_Login.cshtml.rz.scp.css
-C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout_ProductosLista.cshtml.rz.scp.css
-C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout_Usuarios.cshtml.rz.scp.css
 C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\bundle\ProyectoWeb.styles.css
 C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\projectbundle\ProyectoWeb.bundle.scp.css
 C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ProyectoWeb.csproj.CopyComplete
@@ -1619,3 +1617,4 @@ L:\Tercer cuatri 2023\Progra Avanzada\ProyectoEnGrupó\Proyecto Ultima Semana\Fi
 L:\Tercer cuatri 2023\Progra Avanzada\ProyectoEnGrupó\Proyecto Ultima Semana\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ProyectoWeb.pdb
 L:\Tercer cuatri 2023\Progra Avanzada\ProyectoEnGrupó\Proyecto Ultima Semana\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ProyectoWeb.genruntimeconfig.cache
 L:\Tercer cuatri 2023\Progra Avanzada\ProyectoEnGrupó\Proyecto Ultima Semana\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\ref\ProyectoWeb.dll
+C:\Users\maris\Desktop\FINDGLASSES_REPO\FindGlasses\ProyectoWeb\ProyectoWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout_Administracion.cshtml.rz.scp.css

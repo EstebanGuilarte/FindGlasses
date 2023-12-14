@@ -165,6 +165,14 @@ namespace ProyectoWeb.Controllers
             return View();
         }
 
+        [HttpPost]
+        [FiltroSeguridad]
+        public IActionResult BuscarProductos(string nombreProducto)
+        {
+            var productos = _productosModel.BuscarProductos(nombreProducto);
+            return View("BuscarProducto", productos);
+        }
+
 
     }
 }

@@ -22,40 +22,21 @@
     <link rel="stylesheet" href="~/template/css/reset.css">
     <link rel="stylesheet" href="~/template/style.css">
     <link rel="stylesheet" href="~/template/css/responsive.css">
-    <link rel="stylesheet" href="~/template/css/whatsapp.css"/>
+    <link rel="stylesheet" href="~/template/css/whatsapp.css" />
+
+
 </head>
 <body class="js">
     <header class="header shop">
         <div class="middle-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2 col-12">
-                        <div class="search-top">
-                            <div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
-                            <div class="search-top">
-                                <form class="search-form">
-                                    <input type="text" placeholder="Buscar..." name="search">
-                                    <button value="search" type="submit"><i class="ti-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="mobile-nav"></div>
+                    <div class="col-lg-6">
+                        <a href="@Url.Action("Index", "Login")" class="logo">
+                            <img src="~/images/logo_FindGlasses.png" alt="Logo Find Glasses">
+                        </a>
                     </div>
-                    <div class="col-lg-5 col-md-7 col-12">
-                        <div class="search-bar-top">
-                            <div class="search-bar">
-                                <select>
-                                    <option selected="selected">Categorías</option>
-                                    <option>Lentes para el sol</option>
-                                    <option>Anteojos</option>
-                                </select>
-                                <form>
-                                    <input name="search" placeholder="Buscar....." type="search">
-                                    <button class="btnn"><i class="ti-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-lg-5 col-md-3 col-12">
                         <div class="right-bar">
                             <!--Inicio Carrito de compras-->
@@ -64,13 +45,14 @@
                                 <div class="sinlge-bar shopping">
                                     <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">@Context.Session.GetString("Cantidad").ToString()</span></a>
                                     <div class="shopping-item">
-                                        <div class="dropdown-cart-header"> @if (@Context.Session.GetString("Cantidad".ToString()) == "1")
+                                        <div class="dropdown-cart-header">
+                                            @if (@Context.Session.GetString("Cantidad".ToString()) == "1")
                                             {
                                                 <span>@Context.Session.GetString("Cantidad").ToString() Item</span>
                                             }
                                             else
                                             {
-                                           
+
                                                 <span>@Context.Session.GetString("Cantidad").ToString() Items</span>
                                             }
                                             <a href="#">Carrito de compras</a>
@@ -148,7 +130,7 @@
 
 
 
-      
+
 
         <!-- Tu código HTML -->
         <div class="header-inner">
@@ -189,7 +171,7 @@
                                         <h1 style="color: white;"><span style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">¡Las mejores alternativas para tu vista!</span> Lentes y anteojos</h1>
                                         <p style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">¡Si no lo encuentras aquí,<br> aún no tienes nuestros lentes puestos!</p>
                                         <div class="button">
-                                            <a href="#" class="btn">¡Compra ahora!</a>
+                                            <a href="@Url.Action("Pagar", "Carrito")" class="btn">¡Compra ahora!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -201,9 +183,11 @@
         </div>
     </section>
 
-
-    <section class="small-banner section">
-    </section>
+    <div class="col-lg-12 col-md-7  search-bar">
+        <form action="@Url.Action("BuscarProductos", "Productos")" method="post">
+            <input name="nombreProducto" placeholder="Buscar producto..." type="search">
+        </form>
+    </div>
 
     @RenderBody()
 
@@ -270,10 +254,6 @@
 
 
 
-
-
-
-
     <script>
         $(document).ready(function () {
             // Evento para cambiar entre pestañas del tab
@@ -308,3 +288,4 @@
 </body>
 </html>
 
+<link href="~/css/layout_detalles.css" rel="stylesheet" />

@@ -27,7 +27,7 @@ namespace ProyectoAPI.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous] //TUVE QUE DARLE ALLOWANONYMOUS A TODOS LOS METODOS NO SE PORQUE PARA QUE ME DEJARAN EJECUTARLOS (REVISAR)
+        [AllowAnonymous] 
         [Route("ConsultarProductos")]
         public IActionResult ConsultarProductos()
         {
@@ -165,6 +165,30 @@ namespace ProyectoAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("BuscarProductos/{nombreProducto}")]
+        public IActionResult BuscarProductos(string nombreProducto)
+        {
+            try
+            {
+                using (var context = new SqlConnection(_connection))
+                {
+                    var datos = context.Query<ProductosEnt>("BuscarProductos",
+                        new { nombreProducto },
+                        commandType: CommandType.StoredProcedure).ToList();
+
+                    return Ok(datos);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
     }
 }
 

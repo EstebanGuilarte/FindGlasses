@@ -49,6 +49,11 @@
                                     @Html.DropDownListFor(m => Model.Usuario.ConProvincia, ViewBag.Provincias as List<SelectListItem>, new { @class="form-control form-control-lg", @disabled="disabled" })
                                 </div>
                             </div>
+
+                            <div class="button5">
+                                <a href="@Url.Action("Index", "Login")" class="btn custom-btn" style="color: white;">Vuelve al Inicio</a>
+                            </div>
+
                         </div>
                     </form>
                     <!--/ End Form -->

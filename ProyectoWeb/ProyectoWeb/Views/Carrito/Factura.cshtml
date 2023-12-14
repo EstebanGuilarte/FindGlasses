@@ -6,17 +6,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
- 
+
 <style>
 
     .custom-btn {
-
         color: #fff !important;
-
     }
 
 </style>
- 
+
 <div class="section">
 
     <div class="container">
@@ -32,7 +30,7 @@
                     <h2>Factura No. @Model.FirstOrDefault()?.IdFacturaEncabezado</h2>
 
                 </div>
- 
+
                 <!-- Shopping Cart -->
 
                 <div class="shopping-cart">
@@ -76,7 +74,7 @@
                     </table>
 
                 </div>
- 
+
                 <!-- Impuestos y Total a Pagar -->
 
                 <div class="total-amount">
@@ -106,7 +104,6 @@
                 </div>
 
                 <!--/ End Impuestos y Total a Pagar -->
- 
                 <!-- Nombre Cliente y Fecha de Pago -->
 
                 <div class="row">
@@ -122,32 +119,29 @@
                 </div>
 
                 <!--/ End Nombre Cliente y Fecha de Pago -->
- 
                 <!-- Botones Volver al Inicio y Enviar al Correo -->
-
+                <br />
                 <div class="button5">
                     <a href="@Url.Action("Index", "Login")" class="btn custom-btn">Vuelve al Inicio</a>
-                                    </div>
+                </div>
+                <br />
+                <div>
+                    <button id="EnviarCorreoFacturabtn" class="btn custom-btn">Enviar por Correo tu Factura</button>
+                </div>
 
-                                 <div>
-                                    <button id="EnviarCorreoFacturabtn" class="btn custom-btn">Enviar por Correo tu Factura</button>
-                                </div>
 
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/ End Total Amount -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ End Total Amount -->
                 </div>
             </div>
-            <!--/ End Shopping Cart -->
+<!--/ End Shopping Cart -->
         </div>
     </div>
 </div>
 <!--/ End Lo mejor en lentes y anteojos -->
-
-
 <!-- Agrega el script de jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

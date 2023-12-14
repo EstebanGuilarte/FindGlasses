@@ -106,5 +106,16 @@ namespace ProyectoWeb.Models
                 return 0;
         }
 
+        public List<ProductosEnt>? BuscarProductos(string nombreProducto)
+        {
+            string url = $"{_urlApi}api/Productos/BuscarProductos/{nombreProducto}";
+            var resp = _httpClient.GetAsync(url).Result;
+
+            if (resp.IsSuccessStatusCode)
+                return resp.Content.ReadFromJsonAsync<List<ProductosEnt>>().Result;
+            else
+                return null;
+        }
+
     }
 }
