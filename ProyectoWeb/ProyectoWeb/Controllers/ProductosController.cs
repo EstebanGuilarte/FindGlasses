@@ -170,6 +170,11 @@ namespace ProyectoWeb.Controllers
         public IActionResult BuscarProductos(string nombreProducto)
         {
             var productos = _productosModel.BuscarProductos(nombreProducto);
+            // Modificar las rutas de las imágenes para que sean relativas a wwwroot
+            foreach (var producto in productos)
+            {
+                producto.Imagen = $"~/images/{producto.Imagen}";
+            }
             return View("BuscarProducto", productos);
         }
 

@@ -4,17 +4,11 @@
     ViewData["Title"] = "Home Page";
 }
 
-@if (Model.Count() > 0)
-{
-    <div class="product-area section" id="seccionProductos">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h2>Nuestros Productos</h2>
-                    </div>
-                </div>
-            </div>
+<div class="product-area section" id="seccionProductos">
+    <div class="container">
+
+        @if (Model.Count() > 0)
+        {
             <div class="row">
                 <div class="col-12">
                     <div class="product-info">
@@ -36,7 +30,8 @@
                                             <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                                                 <div class="single-product">
                                                     <div class="product-img">
-                                                        <img src="@item.Imagen" style="max-width: 100%; height: 250px;" class="img-fluid" alt="Product Image" />
+                                                        <!-- Utiliza la ruta relativa a wwwroot e incluye el nombre de la imagen con extensión .png -->
+                                                        <img src="~/images/@(item.IdProducto).png" style="max-width: 100%; height: 250px;" class="img-fluid" alt="Product Image" />
                                                         <div class="button-head">
                                                             <div class="product-action">
                                                                 <input type="number" id="cnt-@item.IdProducto" style="width: 4em;">
@@ -54,7 +49,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         }
                                     </div>
                                 </div>
@@ -69,7 +63,8 @@
                                             <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                                                 <div class="single-product">
                                                     <div class="product-img">
-                                                        <img src="@item.Imagen" style="max-width: 100%; height: 250px;" class="img-fluid" alt="Product Image" />
+                                                        <!-- Utiliza la ruta relativa a wwwroot e incluye el nombre de la imagen con extensión .png -->
+                                                        <img src="~/images/@(item.IdProducto).png" style="max-width: 100%; height: 250px;" class="img-fluid" alt="Product Image" />
                                                         <div class="button-head">
                                                             <div class="product-action">
                                                                 <input type="number" id="cnt-@item.IdProducto" style="width: 4em;">
@@ -87,7 +82,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         }
                                     </div>
                                 </div>
@@ -102,7 +96,8 @@
                                             <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                                                 <div class="single-product">
                                                     <div class="product-img">
-                                                        <img src="@item.Imagen" style="max-width: 100%; height: 250px;" class="img-fluid" alt="Product Image" />
+                                                        <!-- Utiliza la ruta relativa a wwwroot e incluye el nombre de la imagen con extensión .png -->
+                                                        <img src="~/images/@(item.IdProducto).png" style="max-width: 100%; height: 250px;" class="img-fluid" alt="Product Image" />
                                                         <div class="button-head">
                                                             <div class="product-action">
                                                                 <input type="number" id="cnt-@item.IdProducto" style="width: 4em;">
@@ -128,32 +123,21 @@
                     </div>
                 </div>
             </div>
-        </div>
+        }
     </div>
+</div>
 
-
-}
-else
-{
-    <div class="col-12" style="text-align:center; margin-top:5%; font-size:16pt">
-        No hay productos disponibles en este momento
-    </div>
-}
 <script>
-
     function AgregarCarrito(IdProducto, Disponibles) {
         let cantidadComprar = $("#cnt-" + IdProducto).val();
 
         if (cantidadComprar > Disponibles) {
-
             Swal.fire({
                 type: 'error',
                 title: 'Información',
                 text: 'La cantidad ingresada supera las unidades disponibles'
-            })
-
-        }
-        else {
+            });
+        } else {
             $.ajax({
                 type: "POST",
                 url: "/Carrito/RegistrarCarrito",
@@ -163,10 +147,9 @@ else
                     "cantidadComprar": cantidadComprar
                 },
                 success: function (result) {
-                    window.location.href = '@Url.Action("Index", "Login")'
+                    window.location.href = '@Url.Action("Index", "Login")';
                 }
             });
         }
     }
-
 </script>
